@@ -1,28 +1,58 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+
+    <transition name="slide-fade" mode="out-in">
+      <Intro v-if="isQuizStarted == false" @start="startQuiz"></Intro>
+    </transition>
+    <Questionaire v-if="isQuizStarted == true" :questions="questions" :currentQuestion.sync="currentQuestion"></Questionaire>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import axios from 'axios';
+  import Intro from './components/intro';
+  import Questionaire from './components/questionaire';
+  export default {
+    name: "App",
+    components: {
+      Intro,
+      Questionaire
+    },
+    data() {
+      return {
+        
+        baseUrl: process.env.VUE_APP_BASE_URL,
+        title: '',
+        questions: [],
+        currentStage: "introStage",
+        isQuizStarted: false,
+        currentQuestion: 0,
+        answers:[],
+        score: 0,
+        perc: null
+      } 
+    },
+    created(){
+      this.fetchData()
+    },
+    methods: {
+        fetchData(){
+          axios.get('data.json').then(response => {
+            this.title = response.data.title
+            this.questions = response.data.questions
+          })
+        },
+        startQuiz(){
+          this.isQuizStarted = true;
+          console.log('start the quiz')
+        }
+      }
   }
-}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss" scoped>
+ div {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
 </style>
