@@ -9,7 +9,7 @@
           "text": "good",
           "option": "base",
           "type": "costal base",
-          "product_id": "",
+          "product_id": "5003",
           "reasons": [
             { "id": "r1", "reason_text": "Very Affordable"},
             { "id": "r2", "reason_text": "Outriggers or Shade"},
@@ -22,19 +22,20 @@
           "text": "Better",
           "option": "base",
           "type": "deluxe base",
-          "product_id": "",
+          "product_id": "10230",
           "reasons": [
             { "id": "r1", "reason_text": "Full Functionality"},
             { "id": "r2", "reason_text": "Easy Refit, Drop In Replacement"},
             { "id": "r3", "reason_text": "Economical Solution"}
           ],
-          "url":""
+          "url":"https://www.gemlux.com/OR-BA-21"
          },
         {
           "image": "bluewater-base.jpg",
           "text": "Best",
-          "option-type": "base",
+          "option": "base",
           "type": "bluewater base",
+          "product_id": "5033",
           "reasons": [
             { "id": "r1", "reason_text": "Best Of The Best!"},
             { "id": "r2", "reason_text": "Supports Extreme Fishing Techniques"},
@@ -45,10 +46,124 @@
       ]
     },
     {
+      "question_text":"Please Select Your Backing Plate:",
+      "options":[
+        {
+          "image": "backingPlateRound.png",
+          "text": "Round",
+          "type": "backingPlate",
+          "product_id": "5905",
+          "url":""
+        },
+        {
+          "image": "backingPlate.png",
+          "text": "Rectangle",
+          "type": "backingPlate",
+          "product_id": "184",
+          "url":""
+        }
+      ]
+    },
+    {
       "question_text":"Please Select Your Pole Option:",
       "options":[ 
-        {"image": "shade-only.jpg", "text": "Shade Only", "option-type": "pole", "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" },
-        {"image": "outriggers+shade.jpg", "text": "OutRiggers + Shade", "option-type": "pole", "url":"https://www.gemlux.com/shop/boat-fishing-outriggers/coastal-outrigger-system/coastal-outriggers" }
+        {
+          "image": "shade-only.jpg", 
+          "text": "Shade Only",
+          "option": "pole",
+          "type": "costal-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "Collapsable or fixed"},
+            { "id": "r2", "reason_text": "Easy Shade Attachment"},
+            { "id": "r3", "reason_text": "24/7 Shade"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        },
+        {
+          "image": "outriggers+shade.jpg", 
+          "text": "OutRiggers + Shade", 
+          "option-type": "pole",
+          "type": "costal-base",
+          "product_id": "",
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid Construction"},
+            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
+            { "id": "r4", "reason_text": "Easy Shade Attachment"}
+          ],
+          "url":"https://www.gemlux.com/shop/boat-fishing-outriggers/coastal-outrigger-system/coastal-outriggers"
+         },
+         {
+          "image": "shade-only.jpg", 
+          "text": "Hybrid", 
+          "option": "pole",
+          "type": "deluxe-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid Construction"},
+            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        },
+        {
+          "image": "shade-only.jpg", 
+          "text": "Deluxe",
+          "option": "pole",
+          "type": "deluxe-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "collapsable"},
+            { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        },
+        {
+          "image": "shade-only.jpg", 
+          "text": "Internal",
+          "option": "pole",
+          "type": "deluxe-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid construction"},
+            { "id": "r2", "reason_text": "Sleek clean look"},
+            { "id": "r3", "reason_text": "Internal Rigging"},
+            { "id": "r4", "reason_text": "No shade Attachment"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        },
+        {
+          "image": "shade-only.jpg", 
+          "text": "Internal Poles",
+          "option": "pole",
+          "type": "blueWater-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "Sleek Clean look"},
+            { "id": "r3", "reason_text": "Internal Rigging"},
+            { "id": "r4", "reason_text": "No Shade Attachment"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        },
+        {
+          "image": "shade-only.jpg", 
+          "text": "Deluxe Poles",
+          "option": "pole",
+          "type": "blueWater-base",
+          "product_id": "10206",
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+        }
       ]
     },
     {
@@ -58,14 +173,93 @@
         {"image": "single.jpg", "text": "single", "option-type": "rigging", "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit" },
         {"image": "double.jpg", "text": "double", "option-type": "rigging", "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit" },
         {"image": "triple.jpg", "text": "triple", "option-type": "rigging", "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" }
+      ],
+      "benefits": [
+          "UV RESISTANT LINE",
+          "GEMLOX HALYARDS",
+          "ALL NECESSARY HARDWARE TO RIG"
       ]
     },
     {
       "question_text":"Please Select Your Shade:",
       "options":[ 
-        {"image": "single.jpg", "option-type": "shade", "text": "small", "url": "https://www.gemlux.com/Fly-Shade-Small_2" },
-        {"image": "single.jpg", "option-type": "shade", "text": "medium", "url": "https://www.gemlux.com/Fly-Shade-Medium_2" },
-        {"image": "single.jpg", "option-type": "shade", "text": "large", "url": "https://www.gemlux.com/Fly-Shade-Large_2" }
+        {
+          "image": "single.jpg",
+          "text": "small",
+          "option-type": "shade",
+          "product_id":"6816",
+          "url": "https://gemlux.com/OR-SH-01" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "medium",
+          "option-type": "shade",
+          "product_id":"6815", 
+          "url": "https://www.gemlux.com/Fly-Shade-Medium_2" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "large",
+          "option-type": "shade", 
+          "product_id":"6814",
+          "url": "https://www.gemlux.com/Fly-Shade-Large_2" 
+        }
+      ],
+      "benefits": [
+        "New Lightweight Material", 
+        "Easy to Setup", 
+        "Easy to Store"
+      ]
+    }
+  ],
+  "independentShade": [
+    {
+      "question_text":"Please Select Your Pole Option:",
+      "options":[ 
+        {
+          "image": "9ftShadePoles.jpg", 
+          "text": "9FT Collapssable",
+          "option-type": "pole",
+          "product_id": "9159",
+          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft"
+        },
+        {
+          "image": "8ftFlagpole.jpg", 
+          "text": "8FT fixed",
+          "option-type": "pole", 
+          "product_id": "9159",
+          "url":"https://www.gemlux.com/Coastal-Hybrid-Flagpole-Fixed-8ft" }
+      ]
+    },
+    {
+      "question_text":"Please Select Your Shade:",
+      "options":[ 
+        {
+          "image": "single.jpg",
+          "text": "small",
+          "option-type": "shade",
+          "product_id":"6816",
+          "url": "https://gemlux.com/OR-SH-01" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "medium",
+          "option-type": "shade",
+          "product_id":"6815", 
+          "url": "https://www.gemlux.com/Fly-Shade-Medium_2" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "large",
+          "option-type": "shade", 
+          "product_id":"6814",
+          "url": "https://www.gemlux.com/Fly-Shade-Large_2" 
+        }
+      ],
+      "benefits": [
+        "New Lightweight Material", 
+        "Easy to Setup", 
+        "Easy to Store"
       ]
     }
   ]

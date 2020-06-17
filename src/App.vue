@@ -4,8 +4,19 @@
     <transition name="slide-fade" mode="out-in">
       <Intro v-if="isQuizStarted == false" @start="startQuiz"></Intro>
     </transition>
-    <Questionaire v-if="isQuizStarted == true" :questions="questions" :currentQuestion.sync="currentQuestion"></Questionaire>
-
+    <Questionaire v-if="isQuizStarted == true && currentStage == 'quiz-started'"
+     :questions="questions" 
+     :currentQuestion.sync="currentQuestion"
+     :results.sync="results"
+     ></Questionaire>
+    <div v-if="currentStage == 'results'" class="results">
+      <h2>Your Selections are:</h2>
+      <ul>
+        <li v-for="(result, index) in results" :key="index">
+          {{ result }}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -28,7 +39,7 @@
         currentStage: "introStage",
         isQuizStarted: false,
         currentQuestion: 0,
-        answers:[],
+        results:[],
         score: 0,
         perc: null
       } 
@@ -45,6 +56,7 @@
         },
         startQuiz(){
           this.isQuizStarted = true;
+          this.currentStage = 'quiz-started';
           console.log('start the quiz')
         }
       }
@@ -54,5 +66,8 @@
 <style lang="scss" scoped>
  div {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ .results {
+   text-align: center;
  }
 </style>

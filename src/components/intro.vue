@@ -3,7 +3,7 @@
     <div class="intro_content">
       <h3>Build Your</h3>
       <p>OutRigger System</p>
-      <Button @button-clicked="start"></Button>
+      <Button @button-clicked="start" class="start-quiz"></Button>
     </div>
   </div>
 </template>
@@ -55,6 +55,14 @@
       font-size: 4rem;
       font-weight: 200;
       margin: 0;
+    }
+
+    .start-quiz {
+      padding: 1rem 1.5rem;
+      font-size: 1.9rem;
+      font-weight: bold;
+      text-transform: uppercase;
+
     }
   }
 </style>
