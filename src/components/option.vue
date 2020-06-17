@@ -5,12 +5,13 @@
       <div class="form-group">
         <input type="radio" 
         :name="option.option" 
-        id="" 
+        :id="option.product_id" 
         :value="option.product_id" 
         v-model="selected"
+        :required="!selected"
         @change="selectionMade"
         > 
-        <label for="">{{ option.text }}</label>
+        <label :for="option.product_id">{{ option.text }}</label>
       </div>
       <p>{{ option.type }}</p>
       
@@ -46,7 +47,7 @@
     methods: {
       selectionMade(){
         console.log(this.selected)
-        this.$parent.$emit('selection-made', { "product_id": this.selected, "outrigger": this.option.type})
+        this.$parent.$emit('selection-made', { "product_id": this.selected, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
       }
     }
   }
@@ -56,7 +57,12 @@
 
   .option_item {
     border: 1px solid #193966;
-    width: calc(calc(100% / 3) - 48px);
+    width: 100%;
+    margin: 1rem auto;
+    @media screen and (min-width: 768px) {
+          width: calc(calc(100% / 3) - 48px);
+    }
+
 
   }
       img {

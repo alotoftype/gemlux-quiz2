@@ -1,8 +1,9 @@
 <template>
   <div class="quiz">
     <Question
-      :key="questions[currentQuestion].question"
+      :key="questions[currentQuestion].index"
       :question="questions[currentQuestion]"
+      :currentQuestion="currentQuestion"
       @selection-made="saveResults"
     ></Question>
     <div class="buttons">
@@ -75,7 +76,12 @@
 }
  span {
    border: 1px solid #193966;
-   padding: 1rem 2rem;
+   padding: .5rem 1rem;
+
+  @media screen and (min-width: 768px){
+    padding: 1rem 2rem;
+  }
+
   &:hover,  {
     color: #fff;
     background-color: #193966;

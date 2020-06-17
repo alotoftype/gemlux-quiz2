@@ -1,19 +1,22 @@
 <template>
   <div>
     <h3>{{ question.question_text }}</h3>
-      <div class="option_container">
+      <div class="option_container" v-if="currentQuestion == 2">
         <Option
-      v-for="option in subsetOptions()"
+      v-for="option in question.options.filter(option => option.type === previousQuestion)"
       :key="option.product_id"
       :option="option"
       :benefits="question.benefits"
-      
       ></Option>
-
       </div>
-            {{ previousQuestion() }}
-            {{ question.options.filter(option => 'blueWater-base').length }}
-            {{ subsetOptions().length }}
+       <div class="option_container" v-else>
+        <Option
+      v-for="option in question.options"
+      :key="option.product_id"
+      :option="option"
+      :benefits="question.benefits"
+      ></Option>
+      </div>
   </div>
 </template>
 
@@ -25,29 +28,28 @@
       Option
     },
     props: {
-      question: Object
+      question: Object,
+      currentQuestion: Number
     },
-    methods: {
+    computed: {
       previousQuestion(){
         if(this.$parent.results.length != 0){
           let answer = this.$parent.results[0];
-        return answer.outrigger;
+          console.log(answer,)
+        return answer.outrigger.replace(" ", "-");
         } else {
             return null;
         }
-      },
-      subsetOptions(){
-        if(this.previousQuestion() == 'deluxe-base'){
-          console.log('this subset is "deluxe" ')
-          return this.question.options.filter( option => { console.log(option); option.type == 'deluxe-base' })
-        } else if (this.previousQuestion() == 'costal-base'){
-          console.log('this subset is "costal" ')
-          return this.question.options.filter( option => option.type == 'costal-base')
-        } else if (this.previousQuestion() == 'blueWater-base'){
-          console.log('this subset is "blue-water" ')
-          return this.question.options.filter( option => option.type == 'bluewater-base')
+      }
+    },
+    methods: {
+      
+      subsetOptions(arr, filter){
+        if(arr && arr.length > 0){
+          console.log('this subset is "deluxe"', arr)
+          return arr.filter( option => { option.type == filter })
         } else {
-          return this.question.options
+          return arr
         }
         
       }
@@ -58,7 +60,12 @@
 <style lang="scss" scoped>
 .option_container {
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+
+@media screen and (min-width: 768px) {
+  flex-direction: row;
+}
 }
 h3 {
       text-align: center;

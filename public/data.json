@@ -140,7 +140,7 @@
           "image": "shade-only.jpg", 
           "text": "Internal Poles",
           "option": "pole",
-          "type": "blueWater-base",
+          "type": "bluewater-base",
           "product_id": "10206",
           "reasons": [
             { "id": "r1", "reason_text": "100% carbon fiber"},
@@ -154,7 +154,7 @@
           "image": "shade-only.jpg", 
           "text": "Deluxe Poles",
           "option": "pole",
-          "type": "blueWater-base",
+          "type": "bluewater-base",
           "product_id": "10206",
           "reasons": [
             { "id": "r1", "reason_text": "100% carbon fiber"},
@@ -170,13 +170,31 @@
       "question_text":"Please Select Your Rigging Kit:",
       "info": "Measure the width between your bases to find the correct size shade for your boat",
       "options":[ 
-        {"image": "single.jpg", "text": "single", "option-type": "rigging", "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit" },
-        {"image": "double.jpg", "text": "double", "option-type": "rigging", "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit" },
-        {"image": "triple.jpg", "text": "triple", "option-type": "rigging", "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" }
+        {
+          "image": "single.jpg",
+          "text": "single", 
+          "option-type": "rigging",
+          "product_id":"",
+          "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit"
+         },
+        {
+          "image": "double.jpg",
+          "text": "double", 
+          "option-type": "rigging",
+          "product_id":"",
+          "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit"
+        },
+        {
+          "image": "triple.jpg",
+          "text": "triple",
+          "option-type": "rigging",
+          "product_id":"",
+          "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" 
+        }
       ],
       "benefits": [
           "UV RESISTANT LINE",
-          "GEMLOX HALYARDS",
+          "GEMLUX HALYARDS",
           "ALL NECESSARY HARDWARE TO RIG"
       ]
     },

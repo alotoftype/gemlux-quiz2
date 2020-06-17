@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
 
     <transition name="slide-fade" mode="out-in">
       <Intro v-if="isQuizStarted == false" @start="startQuiz"></Intro>
@@ -11,13 +11,15 @@
      ></Questionaire>
     <div v-if="currentStage == 'results'" class="results">
       <h2>Your Selections are:</h2>
-      <ul>
-        <li v-for="(result, index) in results" :key="index">
-          {{ result }}
-        </li>
-      </ul>
+      <div class="results_wrapper">
+        <div v-for="(result, index) in results" :key="index" class="result_item">
+          <a :href="result.url" target="_blank">
+          <img :src="require(`@/assets/images/${result.image}`)" alt="">
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -69,5 +71,26 @@
  }
  .results {
    text-align: center;
+ }
+ img {
+   width:100%;
+   object-fit: cover;
+   object-position: center center;
+   height: 60%;
+ }
+ .results_wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   flex-wrap: wrap;
+
+   @media screen and (min-width: 768px){
+     flex-direction: row;
+     align-items: initial;
+     justify-content: space-around;
+   }
+ }
+ .result_item{
+   width: calc(100% / 3);
  }
 </style>
