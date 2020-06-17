@@ -16,7 +16,9 @@
           <a :href="result.url" target="_blank">
           <img :src="require(`@/assets/images/${result.image}`)" alt="">
           </a>
+          <a :href="result.url" class="learn-more">Learn More</a>
         </div>
+        
       </div>
     </div>
   </section>
@@ -30,11 +32,10 @@
     name: "App",
     components: {
       Intro,
-      Questionaire
+      Questionaire,
     },
     data() {
       return {
-        
         baseUrl: process.env.VUE_APP_BASE_URL,
         title: '',
         questions: [],
@@ -70,14 +71,19 @@
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  }
  .results {
-   text-align: center;
+    text-align: center;
+    img {
+      width:100%;
+      object-fit: cover;
+      object-position: center center;
+      height: 60%;
+    }
  }
+
  img {
-   width:100%;
-   object-fit: cover;
-   object-position: center center;
-   height: 60%;
+   width: 100%;
  }
+
  .results_wrapper {
    display: flex;
    flex-direction: column;

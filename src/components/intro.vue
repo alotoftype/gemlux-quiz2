@@ -35,9 +35,11 @@
     display: flex;
     background-size: 100%;
     background-position: left center;
+    background-repeat: no-repeat;
     justify-content: flex-end;
     align-items: center;
     color: #fff;
+    position: relative;
 
 
   }
@@ -46,6 +48,7 @@
     width: 30%;
     height: 50%;
     text-align: center;
+    position: absolute;
 
         h3 {
       font-size: 3rem;

@@ -1,6 +1,6 @@
 <template>
   <span @click="buttonSelected" >
-    Start here
+   <slot>Start here</slot>
   </span>
 </template>
 
