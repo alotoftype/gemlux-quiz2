@@ -2,7 +2,7 @@
   <main>
     <nav class="nav">
 
-      <li><img :src="require(`@/assets/images/GEMLUX_Main_Logo_White.svg`)" class="logo" alt="Logo Image"></li>
+      <li><a href="https://gemlux.com" target="_blank"><img :src="require(`@/assets/images/GEMLUX_Main_Logo_White.svg`)" class="logo" alt="Logo Image"></a></li>
     </nav>
   <section>
     <transition name="slide-fade" mode="out-in">
