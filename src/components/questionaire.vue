@@ -10,7 +10,7 @@
       <span @click="startOver" v-show="currentQuestion > 0">Start Over</span>
       <span @click="goBack" v-show="currentQuestion > 0">Go Back</span>
       <span @click="goForward" v-show="currentQuestion < questions.length && !showResults">keep going</span>
-      <span @click="renderResults" v-show="showResults">Show Results</span>
+      <span @click="renderResults" v-show="showResults">View your Packages</span>
     </div>
   </div>
 </template>

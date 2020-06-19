@@ -4,7 +4,7 @@
 
       <li><a href="https://gemlux.com" target="_blank"><img :src="require(`@/assets/images/GEMLUX_Main_Logo_White.svg`)" class="logo" alt="Logo Image"></a></li>
     </nav>
-  <section>
+  <section class="container">
     <transition name="slide-fade" mode="out-in">
       <Intro v-if="isQuizStarted == false" @start="startQuiz"></Intro>
     </transition>
@@ -144,7 +144,11 @@
  img {
    width: 100%;
  }
-
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 1rem auto;
+}
  .results_wrapper {
    display: flex;
    flex-direction: column;

@@ -56,9 +56,12 @@
 <style lang="scss" scoped>
 
   .option_item {
-    border: 1px solid #193966;
+    border: 5px solid #193966;
     width: 100%;
     margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     @media screen and (min-width: 768px) {
           width: calc(calc(100% / 3) - 48px);
     }
@@ -76,23 +79,24 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     border: 0px;
-    width: 100%;
+    width: 20%;
     height: 2rem;
     padding: 0;
 }
 .form-group {
-  text-align: center;
+  display: flex;
+  align-items: center;
 }
 label {
   color: #193966;
   font-weight: 700;
   font-size: 1.5rem;
   text-transform:uppercase;
-  display: block;
+  //display: block;
 }
 p {
-  text-align: center;
   text-transform: uppercase;
+  margin-left: 1rem;
 }
 .learn-more {
   text-align: center;
