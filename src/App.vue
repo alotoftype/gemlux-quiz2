@@ -1,6 +1,10 @@
 <template>
-  <section>
+  <main>
+    <nav class="nav">
 
+      <li><img :src="require(`@/assets/images/GEMLUX_Main_Logo_White.svg`)" class="logo" alt="Logo Image"></li>
+    </nav>
+  <section>
     <transition name="slide-fade" mode="out-in">
       <Intro v-if="isQuizStarted == false" @start="startQuiz"></Intro>
     </transition>
@@ -18,10 +22,11 @@
           </a>
           <a :href="result.url" class="learn-more">Learn More</a>
         </div>
-        
       </div>
+              <a href="" @click="resultsToCart">Purchase items now</a>
     </div>
   </section>
+  </main>
 </template>
 
 <script>
@@ -44,7 +49,8 @@
         currentQuestion: 0,
         results:[],
         score: 0,
-        perc: null
+        perc: null,
+        resultUrl: ''
       } 
     },
     created(){
@@ -61,14 +67,56 @@
           this.isQuizStarted = true;
           this.currentStage = 'quiz-started';
           console.log('start the quiz')
+        },
+        addToCartUrl(){
+          let url = 'http://shopping.na3.netsuite.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid='
+          let string = '';
+          let buyidcount='';
+
+          this.results.forEach(function(item){
+ 
+            if(item !== this.results[this.results.length-1]){
+              buyidcount += `multi&`;
+            } else {
+              buyidcount += `multi`;
+            }
+            if(item.product_id != '' && item.product_id !== null && item.product_id !== undefined){
+              string += `${item.product_id},1;`;
+            }
+          })
+          this.resultUrl = url + buyidcount + string;
+        },
+        resultsToCart(){
+          if(this.results && this.results.length != 0) {
+              window.open(this.resultUrl, '_blank')
+          }else{
+            window.open('https://www.gemlux.com/cart', '_blank');
+          }
         }
       }
   }
 </script>
 
 <style lang="scss" scoped>
+
  div {
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+ main {
+   margin: 0;
+   padding: 0;
+ }
+ .nav {
+   background-color: #193A66;
+   li {
+     list-style-type: none;
+   }
+   display: flex;
+   justify-content: center;
+ }
+ .logo {
+   margin: 1rem auto;
+   max-width: 250px;
  }
  .results {
     text-align: center;
@@ -99,4 +147,25 @@
  .result_item{
    width: calc(100% / 3);
  }
+
+ .header .header__body.sticky {
+        position: fixed !important;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 100;
+        border-top: 0;
+    }
+.nav .dropdown .articles, .nav .pickup-in-store-dropdown .articles {
+    padding-left: 6rem;
+}
+.header-menu-secondary-nav.nav >
+.articles--teritary {
+    display: flex;
+    margin: unset;
+}
+.btn-modified {
+  color: #ffffff;
+  background-color: #193a66;
+}
 </style>

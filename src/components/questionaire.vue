@@ -62,7 +62,9 @@
       },
       renderResults(){
         this.$parent.currentStage = "results"
+        this.$parent.addToCartUrl()
         console.log("showing off results", this.$parent.results);
+        console.log("showubg results url", this.$parent.resultUrl)
       }
     }
   }
