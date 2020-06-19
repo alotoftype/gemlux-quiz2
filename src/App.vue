@@ -23,7 +23,7 @@
           <a :href="result.url" class="learn-more">Learn More</a>
         </div>
       </div>
-              <a href="" @click="resultsToCart">Purchase items now</a>
+              <a :href="addToCartUrl()" target="_blank">Purchase items now</a>
     </div>
   </section>
   </main>
@@ -56,6 +56,9 @@
     created(){
       this.fetchData()
     },
+    computed: {
+      
+    },
     methods: {
         fetchData(){
           axios.get('data.json').then(response => {
@@ -69,22 +72,32 @@
           console.log('start the quiz')
         },
         addToCartUrl(){
-          let url = 'http://shopping.na3.netsuite.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid='
-          let string = '';
-          let buyidcount='';
-
-          this.results.forEach(function(item){
- 
-            if(item !== this.results[this.results.length-1]){
-              buyidcount += `multi&`;
-            } else {
-              buyidcount += `multi`;
-            }
-            if(item.product_id != '' && item.product_id !== null && item.product_id !== undefined){
+          function createdUrl(arr){
+            let url = 'http://shopping.na3.netsuite.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid='
+            let string = "";
+            let buyidcount = "";
+            let combinedUrl = "";
+            let len = arr.length - 1;
+            arr.forEach(function(item, index){
+              if(index===(len-1)) {
+                console.log('last one');
+              }
+              if(item !== arr[arr.results-1]){
+                buyidcount += 'multi&';
+              } else {
+                buyidcount += 'multi='
+              }
+            if (item.product_id !== '' && item.product_id !== null && item.product_id !== undefined) {
               string += `${item.product_id},1;`;
             }
-          })
-          this.resultUrl = url + buyidcount + string;
+            })
+            console.log('string:', string);
+            console.log('buyIdCount', buyidcount);
+            combinedUrl = url + buyidcount + string;
+            console.log(combinedUrl)
+            return combinedUrl;
+          }
+          return createdUrl(this.results)
         },
         resultsToCart(){
           if(this.results && this.results.length != 0) {
