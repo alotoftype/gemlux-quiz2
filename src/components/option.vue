@@ -68,11 +68,11 @@
 
 
   }
-      img {
-     width: 100%;
-    // object-fit: cover;
-    // object-position: center center;
-    // height: 80%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      height: 50%;
   }
   
   input[type="radio"] {

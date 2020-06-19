@@ -72,20 +72,26 @@
 <style lang="scss" scoped>
 .buttons {
   margin: 2rem auto;
+  padding: 0 1rem;
   margin-top: 4rem;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
  span {
+   display: block;
    border: 1px solid #193966;
+   background-color: #193966;
+   color: #fff;
    padding: .5rem 1rem;
 
   @media screen and (min-width: 768px){
     padding: 1rem 2rem;
   }
 
-  &:hover,  {
-    color: #fff;
-    background-color: #193966;
+  &:hover {
+    color: #193966;
+    background-color: #fff;
   }
  }
  .active {
