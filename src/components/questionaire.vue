@@ -7,8 +7,8 @@
       @selection-made="saveResults"
     ></Question>
     <div class="buttons">
-      <span @click="startOver" v-show="currentQuestion > 0">Start Over</span>
-      <span @click="goBack" v-show="currentQuestion > 0">Go Back</span>
+      <!-- <span @click="startOver" v-show="currentQuestion > 0">Start Over</span> -->
+      <span @click="goBack" v-show="currentQuestion > 0" class="g-back">Go Back</span>
       <span @click="goForward" v-show="currentQuestion < questions.length && !showResults">keep going</span>
       <span @click="renderResults" v-show="showResults">View your Packages</span>
     </div>
@@ -75,6 +75,7 @@
   padding: 0 1rem;
   margin-top: 4rem;
   text-align: center;
+  text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
@@ -97,5 +98,14 @@
  .active {
   color: #fff;
   background-color: #193966; 
+ }
+ .g-back {
+   color: #193966;
+   background-color: #fff;
+
+  &:hover {
+    color: #fff;
+    background-color: #193966;
+  }
  }
 </style>

@@ -97,7 +97,11 @@
             console.log(combinedUrl)
             return combinedUrl;
           }
-          return createdUrl(this.results)
+          if(this.results && this.results.length != 0) {
+            return createdUrl(this.results)
+          } else {
+            return 'https://www.gemlux.com/cart'
+          }
         },
         resultsToCart(){
           if(this.results && this.results.length != 0) {
@@ -145,9 +149,13 @@
    width: 100%;
  }
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 1280px;
   margin: 1rem auto;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+  }
 }
  .results_wrapper {
    display: flex;

@@ -2,3 +2,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.reason li {
+  list-style-image: url('../assets/images/gemlux-symbol.png');
+}
