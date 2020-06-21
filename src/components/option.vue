@@ -122,7 +122,8 @@ label {
 }
 p {
   text-transform: uppercase;
-  margin-left: 1rem;
+  margin-left: 3.8rem;
+  margin-top: .2rem;
 }
 .name {
   color: #193966; 
