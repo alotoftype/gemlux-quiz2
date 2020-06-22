@@ -171,6 +171,11 @@
  }
  .result_item{
    width: calc(100% / 3);
+
+   @media screen and (min-width: 768px) {
+     width: calc(100% / 6);
+     padding: 1rem;
+   }
  }
 
  .header .header__body.sticky {
