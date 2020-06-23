@@ -14,16 +14,23 @@
      :results.sync="results"
      ></Questionaire>
     <div v-if="currentStage == 'results'" class="results">
-      <h2>Your Selections are:</h2>
+      <div class="results__button">
+        <a href="" target="_blank">Start Over</a>
+        <a :href="addToCartUrl()" target="_blank">Add to Cart</a>
+      </div>
       <div class="results_wrapper">
         <div v-for="(result, index) in results" :key="index" class="result_item">
+          <div class="results_item__img">
           <a :href="result.url" target="_blank">
           <img :src="require(`@/assets/images/${result.image}`)" alt="">
           </a>
+          </div>
+          <div class="results_item__content">
+          <h2>{{result.text}}</h2>
           <a :href="result.url" class="learn-more">Learn More</a>
+          </div>
         </div>
       </div>
-              <a :href="addToCartUrl()" target="_blank">Purchase items now</a>
     </div>
   </section>
   </main>
@@ -159,22 +166,32 @@
 }
  .results_wrapper {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
    align-items: center;
    flex-wrap: wrap;
 
    @media screen and (min-width: 768px){
-     flex-direction: row;
+     flex-direction: column;
      align-items: initial;
      justify-content: space-around;
    }
  }
  .result_item{
+   border: 3px solid #193966;
    width: calc(100% / 3);
 
    @media screen and (min-width: 768px) {
-     width: calc(100% / 6);
+     width: 100%;
      padding: 1rem;
+     margin: 1 rem;
+   }
+ }
+
+ .results_item__img {
+   width: 20%;
+
+   img {
+     width: 100%;
    }
  }
 

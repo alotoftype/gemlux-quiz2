@@ -29,7 +29,11 @@
     },
     computed: {
       showResults: function(){
-        let results = this.$parent.currentQuestion == this.questions.length - 1
+        let results
+        if( this.$parent.currentQuestion == this.questions.length - 1 && this.results.length - 1  === this.questions.length - 1) {
+          results = true;
+        }
+        
         return results ? true : false
       }
     },
@@ -44,6 +48,7 @@
       goBack() {
         console.log("this goes back",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
+          this.$parent.results.pop()
            return this.$parent.currentQuestion -= 1;
         }
       },
