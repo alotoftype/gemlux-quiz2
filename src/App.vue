@@ -16,7 +16,7 @@
     <div v-if="currentStage == 'results'" class="results">
       <div class="results__button">
         <a href="" target="_blank">Start Over</a>
-        <a :href="addToCartUrl()" target="_blank">Add to Cart</a>
+        <a :href="addToCartUrl()" target="_blank" class="active">Add to Cart</a>
       </div>
       <div class="results_wrapper">
         <div v-for="(result, index) in results" :key="index" class="result_item">
@@ -26,7 +26,7 @@
           </a>
           </div>
           <div class="results_item__content">
-          <h2>{{result.text}}</h2>
+          <h2>{{result.product_text}}</h2>
           <a :href="result.url" class="learn-more">Learn More</a>
           </div>
         </div>
@@ -150,6 +150,8 @@
       object-position: center center;
       height: 60%;
     }
+
+    
  }
 
  img {
@@ -166,7 +168,7 @@
 }
  .results_wrapper {
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
    align-items: center;
    flex-wrap: wrap;
 
@@ -178,12 +180,21 @@
  }
  .result_item{
    border: 3px solid #193966;
-   width: calc(100% / 3);
+  width: 100%;
+   display: flex;
+   align-items: center;
+   text-align: left;
+        margin: 1rem auto;
 
    @media screen and (min-width: 768px) {
      width: 100%;
-     padding: 1rem;
-     margin: 1 rem;
+     margin: 1rem;
+     margin-top: .5rem;
+   }
+
+   img {
+     width: 100%;
+     object-fit: cover;
    }
  }
 
@@ -195,6 +206,38 @@
    }
  }
 
+ .results_item__content {
+   margin: 1rem;
+
+   h2 {
+     text-transform: uppercase;
+     font-weight: lighter;
+   }
+ }
+ .results__button {
+   width: 100%;
+   display: flex;
+   margin: 1rem auto;
+   margin-bottom: .2rem;
+   justify-content: space-between;
+
+   @media screen and (min-width: 768px) {
+     margin: 1rem;
+     margin-bottom: 0;
+   }
+
+   a {
+     border: 1px solid #193966;
+     text-transform: uppercase;
+     padding: 1rem 2rem;
+     
+   }
+
+   .active {
+     background-color: #193966;
+     color: #fff;
+   }
+ }
  .header .header__body.sticky {
         position: fixed !important;
         width: 100%;

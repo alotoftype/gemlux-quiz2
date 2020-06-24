@@ -47,7 +47,7 @@
     methods: {
       selectionMade(){
         console.log(this.selected)
-        this.$parent.$emit('selection-made', { "product_id": this.selected, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+        this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
       }
     }
   }
