@@ -6,8 +6,10 @@
       "options":[ 
         {
           "image": "costal-base.jpg",
+          "name": "Costal Base",
           "text": "good",
           "option": "base",
+          "description": "Winner of the 2020 Miami Boat Show Innovation Award! Our coastal base series offers endless possibilities for a variety of your boating and fishing needs. We’ve developed a completely new stainless steel patent-pending base design that allows for the ability to position your base at any angle with 22.5-degree increments which provides optimal fishing or shade positioning angles. You can fish with traditional outriggers, use them as Kingfish outriggers or shade all with this system!",
           "type": "costal base",
           "product_id": "5003",
           "reasons": [
@@ -19,8 +21,10 @@
         },
         {
           "image": "deluxebaseimage.jpg",
+          "name": "Deluxe Base",
           "text": "Better",
           "option": "base",
+          "description": "You’ll find this base is ideal for boats 18'-25', but can also be used in some applications outside this range. The Deluxe Base was designed with bait fishing in mind, allowing for multiple baits and taglines. Our one-handle design allows for complete adjustment from underneath the T-Top. Up, down, in and out, making them much easier and safer to use in rough offshore conditions. The Deluxe bases are designed to be used with 16' and 18’ outriggers, in which we have created a new hybrid pole for this specific base. This new pole is a carbon fiber blend specifically designed for offshore fishing. This allows for a more affordable pole option, yet still providing the quality and durability Gemlux is known for. This uses a 1.5” tube and will hold any pole that is 1.5\".",
           "type": "deluxe base",
           "product_id": "10230",
           "reasons": [
@@ -32,8 +36,10 @@
          },
         {
           "image": "bluewater-base.jpg",
+          "name": "Bluewater Base",
           "text": "Best",
           "option": "base",
+          "description": "Our patented one-handle operation allows for complete adjustment of your outriggers from underneath the T-top. Up, down, in and out, making them much safer to use during rough offshore conditions. Stainless steel roller bearings make these the smoothest operating and most user-friendly bases on the market. GEMLUX® Deluxe Carbon Fiber Outriggers were designed to the highest standard for Outriggers in the fishing industry. With pole lengths up to 22ft, The GEMLUX® Fishing System enables you to fish a wider spread, keeping your baits and teasers in clean water where the fish can see them. Getting your spread outside the whitewater also lets you see the fish much better for a more exciting trolling experience. Troll heavy dredges, multiple baits, and even high-speed troll from the tips with weighted wahoo lures. The Gemlux® Fishing System brings the advantages of a sportfish boat to your center console!",
           "type": "bluewater base",
           "product_id": "5033",
           "reasons": [
@@ -85,28 +91,29 @@
           "text": "OutRiggers + Shade", 
           "option-type": "pole",
           "type": "costal-base",
-          "product_id": "",
+          "product_id": "9159",
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid Construction"},
             { "id": "r2", "reason_text": "Collapsable"},
             { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
             { "id": "r4", "reason_text": "Easy Shade Attachment"}
           ],
-          "url":"https://www.gemlux.com/shop/boat-fishing-outriggers/coastal-outrigger-system/coastal-outriggers"
+          "url":"https://www.gemlux.com/Coastal-Hybrid-Flagpole-Fixed-8ft"
          },
          {
           "image": "deluxeHybridInternal.jpg", 
-          "text": "Hybrid", 
+          "text": "Hybrid",
           "option": "pole",
           "type": "deluxe-base",
-          "product_id": "10206",
+          "product_name": "18' DELUXE OUTRIGGERS COLLAPSIBLE HYBRID (PAIR)",
+          "product_id": "9143",
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid Construction"},
             { "id": "r2", "reason_text": "Collapsable"},
             { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
             { "id": "r4", "reason_text": "Shade Attachment Available"}
           ],
-          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+          "url": "https://www.gemlux.com/Hybrid-Outriggers" 
         },
         {
           "image": "shade-only.jpg", 
@@ -127,14 +134,15 @@
           "text": "Internal",
           "option": "pole",
           "type": "deluxe-base",
-          "product_id": "10206",
+          "product_name": "Internal Hybrid Rigger", 
+          "product_id": "10017",
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid construction"},
             { "id": "r2", "reason_text": "Sleek clean look"},
             { "id": "r3", "reason_text": "Internal Rigging"},
             { "id": "r4", "reason_text": "No shade Attachment"}
           ],
-          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+          "url": "https://www.gemlux.com/Internal-Hybrid-Rigger" 
         },
         {
           "image": "bluewaterInternals.jpg", 
@@ -148,7 +156,7 @@
             { "id": "r3", "reason_text": "Internal Rigging"},
             { "id": "r4", "reason_text": "No Shade Attachment"}
           ],
-          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+          "url": "https://www.gemlux.com/Internal-Rigged-Center-Rigger" 
         },
         {
           "image": "deluxeHybridInternal.jpg", 
@@ -162,7 +170,7 @@
             { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
             { "id": "r4", "reason_text": "Shade Attachment Available"}
           ],
-          "url": "https://www.gemlux.com/Coastal-Hybrid-Shade-Poles-Collapsible-9ft" 
+          "url": "https://www.gemlux.com/Hybrid-Outriggers" 
         }
       ]
     },
@@ -202,21 +210,21 @@
       "question_text":"Please Select Your Shade:",
       "options":[ 
         {
-          "image": "single.jpg",
+          "image": "shade-only.jpg",
           "text": "small",
           "option-type": "shade",
           "product_id":"6816",
           "url": "https://gemlux.com/OR-SH-01" 
         },
         {
-          "image": "single.jpg",
+          "image": "shade-only.jpg",
           "text": "medium",
           "option-type": "shade",
           "product_id":"6815", 
           "url": "https://www.gemlux.com/Fly-Shade-Medium_2" 
         },
         {
-          "image": "single.jpg",
+          "image": "shade-only.jpg",
           "text": "large",
           "option-type": "shade", 
           "product_id":"6814",
