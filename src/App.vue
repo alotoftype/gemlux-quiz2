@@ -80,27 +80,21 @@
         },
         addToCartUrl(){
           function createdUrl(arr){
-            let url = 'http://shopping.na3.netsuite.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid='
+            let url = ' http://gemlux.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid=multi&multi='
             let string = "";
-            let buyidcount = "";
             let combinedUrl = "";
             let len = arr.length - 1;
             arr.forEach(function(item, index){
               if(index===(len-1)) {
                 console.log('last one');
               }
-              if(item !== arr[arr.results-1]){
-                buyidcount += 'multi&';
-              } else {
-                buyidcount += 'multi='
-              }
             if (item.product_id !== '' && item.product_id !== null && item.product_id !== undefined) {
               string += `${item.product_id},1;`;
             }
             })
             console.log('string:', string);
-            console.log('buyIdCount', buyidcount);
-            combinedUrl = url + buyidcount + string;
+
+            combinedUrl = url + string;
             console.log(combinedUrl)
             return combinedUrl;
           }
@@ -123,15 +117,13 @@
 
 <style lang="scss" scoped>
 
- div {
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- }
+
  main {
    margin: 0;
    padding: 0;
  }
  .nav {
-   background-color: #193A66;
+   background-color: $blue;
    li {
      list-style-type: none;
    }
@@ -179,7 +171,7 @@
    }
  }
  .result_item{
-   border: 3px solid #193966;
+   border: 3px solid $blue;
   width: 100%;
    display: flex;
    align-items: center;
@@ -227,14 +219,14 @@
    }
 
    a {
-     border: 1px solid #193966;
+     border: 1px solid $blue;
      text-transform: uppercase;
      padding: 1rem 2rem;
      
    }
 
    .active {
-     background-color: #193966;
+     background-color: $blue;
      color: #fff;
    }
  }
@@ -256,6 +248,6 @@
 }
 .btn-modified {
   color: #ffffff;
-  background-color: #193a66;
+  background-color: $blue;
 }
 </style>

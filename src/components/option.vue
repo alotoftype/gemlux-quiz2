@@ -80,38 +80,37 @@
       height: 50%;
   }
   
-  input[type="radio"] {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    border: 0px;
-    padding: 0;
-    display: inline-block;
-    vertical-align: bottom;
-    margin: 1rem 1.5rem;
-    border-radius: 50%;
-    &:before {
-      content: '';
-      border-radius: 100%;
-      background: #fff;
-      //border: 5px solid #ddd;
-      width: 20px;
-      height: 20px;
-      padding: 5px;
-      opacity: 1;
-      border: 4px solid #193966;
-      display: inline-block;
-      vertical-align: top;
-      position: relative;
-      bottom: 5px;
-      right: 5px;
+  @supports(-webkit-appearance: none) or (-moz-appearance: none) {
+
+    input[type='radio'] {
+      --webkit-apperance: none;
+      --moz-apperance: none;
+      appearance: none;
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+      outline: none;
+      border: 4px solid $blue;
+      border-radius: 50%;
+      background: $white;
+      transition: background ease-in-out .3s;
+        &:after {
+        content: '';
+        display: block;
+        left: 0;
+        top: 0;
+        position: absolute;
+        }
+        &:checked {
+          border: 4px solid $blue;
+          background: $blue;
+        }
     }
-    &.focus {
-      outline: 1px solid #193966;
-    }
-}
+  }
+
 .form-group {
-  //display: flex;
-  //align-items: center;
+  display: flex;
+  align-items: center;
 }
 label {
   color: #193966;

@@ -9,8 +9,8 @@
     <div class="buttons">
       <!-- <span @click="startOver" v-show="currentQuestion > 0">Start Over</span> -->
       <span @click="goBack" v-show="currentQuestion > 0" class="g-back">Go Back</span>
-      <span @click="goForward" v-show="currentQuestion < questions.length && !showResults">keep going</span>
-      <span @click="renderResults" v-show="showResults">View your Packages</span>
+      <span @click="goForward" v-show="currentQuestion < questions.length && !this.displayResults">keep going</span>
+      <span @click="renderResults" v-show="this.displayResults">View your Packages</span>
     </div>
   </div>
 </template>
@@ -19,6 +19,11 @@
   import Question from './question';
   export default {
     name: 'Questionaire',
+    data(){
+      return {
+        displayResults: false
+      }
+    },
     props: {
       questions: Array,
       currentQuestion: Number,
@@ -26,16 +31,6 @@
     },
     components: {
       Question
-    },
-    computed: {
-      showResults: function(){
-        let results
-        if( this.$parent.currentQuestion == this.questions.length - 1 && this.results.length - 1  === this.questions.length - 1) {
-          results = true;
-        }
-        
-        return results ? true : false
-      }
     },
     methods: {
       startOver() {
@@ -49,20 +44,33 @@
         console.log("this goes back",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
           this.$parent.results.pop()
-           return this.$parent.currentQuestion -= 1;
+          if(this.results[0].outrigger == 'costal base'){
+           return this.$parent.currentQuestion -= 2;
+          } else {
+            return this.$parent.currentQuestion -= 1;
+          }
         }
       },
       goForward(){
         console.log("this goes forward",this.currentQuestion)
         if(this.$parent.currentQuestion < this.questions.length && this.$parent.currentQuestion != this.questions.length - 1){
-          return this.$parent.currentQuestion += 1;
+            return this.$parent.currentQuestion += 1;
+          
+        }
+      },
+      showResults(){
+        if( this.currentQuestion == this.questions.length - 1 && this.questions.length == this.$parent.results.length) {
+          return this.displayResults = true
+        }
+        else {
+          return this.displayResults = false
         }
       },
       saveResults(answer){
         if(answer != {} && answer.constructor === Object){
-          this.$parent.results.push(answer);
+          this.$parent.results[this.currentQuestion] = answer;
         }
-        this.goForward();
+        this.showResults()
         console.log(this.$parent.results)
       },
       renderResults(){
@@ -75,6 +83,8 @@
 </script>
 
 <style lang="scss" scoped>
+@import '../scss/variables';
+
 .buttons {
   margin: 2rem auto;
   padding: 0 1rem;
@@ -86,7 +96,7 @@
 }
  span {
    display: block;
-   border: 1px solid #193966;
+   border: 1px solid $blue;
    background-color: #193966;
    color: #fff;
    padding: .5rem 1rem;

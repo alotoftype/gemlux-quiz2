@@ -11,7 +11,7 @@
           "option": "base",
           "description": "Winner of the 2020 Miami Boat Show Innovation Award! Our coastal base series offers endless possibilities for a variety of your boating and fishing needs. We’ve developed a completely new stainless steel patent-pending base design that allows for the ability to position your base at any angle with 22.5-degree increments which provides optimal fishing or shade positioning angles. You can fish with traditional outriggers, use them as Kingfish outriggers or shade all with this system!",
           "type": "costal base",
-          "product_id": "5003",
+          "product_id": "7163",
           "reasons": [
             { "id": "r1", "reason_text": "Very Affordable"},
             { "id": "r2", "reason_text": "Outriggers or Shade"},
@@ -41,7 +41,7 @@
           "option": "base",
           "description": "Our patented one-handle operation allows for complete adjustment of your outriggers from underneath the T-top. Up, down, in and out, making them much safer to use during rough offshore conditions. Stainless steel roller bearings make these the smoothest operating and most user-friendly bases on the market. GEMLUX® Deluxe Carbon Fiber Outriggers were designed to the highest standard for Outriggers in the fishing industry. With pole lengths up to 22ft, The GEMLUX® Fishing System enables you to fish a wider spread, keeping your baits and teasers in clean water where the fish can see them. Getting your spread outside the whitewater also lets you see the fish much better for a more exciting trolling experience. Troll heavy dredges, multiple baits, and even high-speed troll from the tips with weighted wahoo lures. The Gemlux® Fishing System brings the advantages of a sportfish boat to your center console!",
           "type": "bluewater base",
-          "product_id": "5033",
+          "product_id": "5030",
           "reasons": [
             { "id": "r1", "reason_text": "Best Of The Best!"},
             { "id": "r2", "reason_text": "Supports Extreme Fishing Techniques"},
@@ -89,7 +89,7 @@
         {
           "image": "outriggers+shade.jpg", 
           "text": "OutRiggers + Shade", 
-          "option-type": "pole",
+          "option": "pole",
           "type": "costal-base",
           "product_id": "9159",
           "reasons": [
@@ -181,21 +181,21 @@
         {
           "image": "single.jpg",
           "text": "single", 
-          "option-type": "rigging",
+          "option": "rigging",
           "product_id":"",
           "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit"
          },
         {
           "image": "double.jpg",
           "text": "double", 
-          "option-type": "rigging",
+          "option": "rigging",
           "product_id":"",
           "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit"
         },
         {
           "image": "triple.jpg",
           "text": "triple",
-          "option-type": "rigging",
+          "option": "rigging",
           "product_id":"",
           "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" 
         }
@@ -212,21 +212,21 @@
         {
           "image": "shade-only.jpg",
           "text": "small",
-          "option-type": "shade",
+          "option": "shade",
           "product_id":"6816",
           "url": "https://gemlux.com/OR-SH-01" 
         },
         {
           "image": "shade-only.jpg",
           "text": "medium",
-          "option-type": "shade",
+          "option": "shade",
           "product_id":"6815", 
           "url": "https://www.gemlux.com/Fly-Shade-Medium_2" 
         },
         {
           "image": "shade-only.jpg",
           "text": "large",
-          "option-type": "shade", 
+          "option": "shade", 
           "product_id":"6814",
           "url": "https://www.gemlux.com/Fly-Shade-Large_2" 
         }
