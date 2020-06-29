@@ -14,6 +14,8 @@ module.exports = {
   configureWebpack: {
     plugins: [
       new ImageminPlugin({
+        disable: process.env.NODE_ENV !== 'production',
+        est: /\.(jpe?g|png|gif|svg)$/i,
         plugins: [
           imageminMozjpeg({
             quality: 85
