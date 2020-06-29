@@ -2,6 +2,8 @@
   "title": "Outrigger Quiz",
   "questions": [
     {
+      "question_number": 1,
+      "skipQuestion": "none",
       "question_text":"Please Select Your Base:",
       "options":[ 
         {
@@ -52,6 +54,8 @@
       ]
     },
     {
+      "question_number": 2,
+      "skipQuestion": "Costal Base",
       "question_text":"Please Select Your Backing Plate:",
       "options":[
         {
@@ -71,6 +75,7 @@
       ]
     },
     {
+      "question_number": 3,
       "question_text":"Please Select Your Pole Option:",
       "options":[ 
         {
@@ -175,6 +180,7 @@
       ]
     },
     {
+      "question_number": 4,
       "question_text":"Please Select Your Rigging Kit:",
       "info": "Measure the width between your bases to find the correct size shade for your boat",
       "options":[ 
@@ -182,21 +188,21 @@
           "image": "single.jpg",
           "text": "single", 
           "option": "rigging",
-          "product_id":"",
+          "product_id":"10082",
           "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit"
          },
         {
           "image": "double.jpg",
           "text": "double", 
           "option": "rigging",
-          "product_id":"",
+          "product_id":"10085",
           "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit"
         },
         {
           "image": "triple.jpg",
           "text": "triple",
           "option": "rigging",
-          "product_id":"",
+          "product_id":"10088",
           "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" 
         }
       ],
@@ -207,6 +213,7 @@
       ]
     },
     {
+      "question_number": 5,
       "question_text":"Please Select Your Shade:",
       "options":[ 
         {
