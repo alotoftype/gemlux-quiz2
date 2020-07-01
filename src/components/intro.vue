@@ -29,6 +29,7 @@
 </script>
 
 <style lang="scss" scoped>
+
   .intro {
     width: 100%;
     height: 600px;
@@ -45,12 +46,16 @@
   }
   .intro_content{
     //border: 1px solid blue;
-    width: 30%;
-    height: 50%;
-    text-align: center;
-    position: absolute;
-
-        h3 {
+    height: auto;
+    position: relative;
+    @media screen and (min-width: 768px) {
+      width: 40%;
+      height: 50%;
+      text-align: center;
+      position: absolute;
+    }
+    
+    h3 {
       font-size: 3rem;
       margin-bottom: 0;
     }
