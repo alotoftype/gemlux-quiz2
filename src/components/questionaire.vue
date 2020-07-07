@@ -8,9 +8,9 @@
     ></Question>
     <div class="buttons">
       <!-- <span @click="startOver" v-show="currentQuestion > 0">Start Over</span> -->
-      <span @click="goBack" class="g-back" :class="{'hidden':(currentQuestion == 0)}">Go Back</span>
-      <span @click="goForward" v-show="currentQuestion < questions.length && !this.displayResults">keep going</span>
-      <span @click="renderResults" v-show="this.displayResults">View your Packages</span>
+      <span @click="goBack" class="g-back btn" :class="{'hidden':(currentQuestion == 0)}">Go Back</span>
+      <span @click="goForward" class="btn" v-show="currentQuestion < questions.length && !this.displayResults">keep going</span>
+      <span @click="renderResults" class="btn" v-show="this.displayResults">View your Packages</span>
     </div>
   </div>
 </template>
