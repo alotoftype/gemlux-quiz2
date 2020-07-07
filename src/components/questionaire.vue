@@ -44,10 +44,13 @@
       goBack() {
         console.log("this goes back",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
-          this.$parent.results.pop()
+          
           if(this.$parent.results[0].outrigger == "costal base" && this.$parent.currentQuestion == 2 )   {
             this.$parent.currentQuestion -= 2;
+            this.$parent.results.pop()
+            this.$parent.results.pop()
           }else {
+            this.$parent.results.pop()
             this.$parent.currentQuestion -= 1;
           }
         }
