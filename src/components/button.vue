@@ -1,5 +1,5 @@
 <template>
-  <span @click="buttonSelected" >
+  <span class="btn" @click="buttonSelected" >
    <slot>Start here</slot>
   </span>
 </template>
