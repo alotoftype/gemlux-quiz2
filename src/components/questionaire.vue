@@ -8,7 +8,7 @@
     ></Question>
     <div class="buttons">
       <!-- <span @click="startOver" v-show="currentQuestion > 0">Start Over</span> -->
-      <span @click="goBack" v-show="currentQuestion > 0" class="g-back">Go Back</span>
+      <span @click="goBack" class="g-back" :class="{'hidden':(currentQuestion == 0)}">Go Back</span>
       <span @click="goForward" v-show="currentQuestion < questions.length && !this.displayResults">keep going</span>
       <span @click="renderResults" v-show="this.displayResults">View your Packages</span>
     </div>
@@ -27,6 +27,7 @@
     props: {
       questions: Array,
       currentQuestion: Number,
+      previousQuestion: Number,
       results: Array
     },
     components: {
@@ -37,29 +38,35 @@
         console.log("this starts over",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
           this.$parent.results = []
-           return this.$parent.currentQuestion = 0;
+           this.$parent.currentQuestion = 0;
         }
       },
       goBack() {
         console.log("this goes back",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
           this.$parent.results.pop()
-          if(this.results[0].outrigger == 'costal base'){
-           return this.$parent.currentQuestion -= 2;
-          } else {
-            return this.$parent.currentQuestion -= 1;
+          if(this.$parent.results[0].outrigger == "costal base" && this.$parent.currentQuestion == 2 )   {
+            this.$parent.currentQuestion -= 2;
+          }else {
+            this.$parent.currentQuestion -= 1;
           }
         }
       },
       goForward(){
         console.log("this goes forward",this.currentQuestion)
         if(this.$parent.currentQuestion < this.questions.length && this.$parent.currentQuestion != this.questions.length - 1){
-            return this.$parent.currentQuestion += 1;
-          
+          this.$parent.previousQuestion = this.$parent.currentQuestion
+          if(this.$parent.results[0].outrigger == "costal base" && this.$parent.currentQuestion == 0){
+            this.$parent.currentQuestion += 2;
+            this.$parent.results[1] = { image:"", outrigger:"",product_id:"",url:"" }
+          }
+          else {
+            this.$parent.currentQuestion += 1;
+          }
         }
       },
       showResults(){
-        if( this.currentQuestion == this.questions.length - 1 && this.questions.length == this.$parent.results.length) {
+        if( this.questions.length == this.$parent.results.length) {
           return this.displayResults = true
         }
         else {
@@ -75,7 +82,7 @@
       },
       renderResults(){
         this.$parent.currentStage = "results"
-        console.log("showing off results", this.$parent.results);
+        console.log("showing off results", this.$parent.results.filter( result => result != undefined));
         console.log("showubg results url", this.$parent.resultUrl)
       }
     }
@@ -84,7 +91,9 @@
 
 <style lang="scss" scoped>
 @import '../scss/variables';
-
+.hidden {
+  visibility: hidden;
+}
 .buttons {
   margin: 2rem auto;
   padding: 0 1rem;

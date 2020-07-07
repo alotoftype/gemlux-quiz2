@@ -10,16 +10,17 @@
     </transition>
     <Questionaire v-if="isQuizStarted == true && currentStage == 'quiz-started'"
      :questions="questions" 
+     :previousQuestion.sync="previousQuestion"
      :currentQuestion.sync="currentQuestion"
      :results.sync="results"
      ></Questionaire>
     <div v-if="currentStage == 'results'" class="results">
       <div class="results__button">
-        <a href="" target="_blank">Start Over</a>
+        <a href="/">Start Over</a>
         <a :href="addToCartUrl()" target="_blank" class="active">Add to Cart</a>
       </div>
       <div class="results_wrapper">
-        <div v-for="(result, index) in results" :key="index" class="result_item">
+        <div v-for="(result, index) in results.filter( result => result.image != '')" :key="index" class="result_item">
           <div class="results_item__img">
           <a :href="result.url" target="_blank">
           <img :src="require(`@/assets/images/${result.image}`)" alt="">
@@ -27,7 +28,7 @@
           </div>
           <div class="results_item__content">
           <h2>{{result.product_text}}</h2>
-          <a :href="result.url" class="learn-more">Learn More</a>
+          <a :href="result.url || ''" class="learn-more">Learn More</a>
           </div>
         </div>
       </div>
@@ -54,6 +55,7 @@
         currentStage: "introStage",
         isQuizStarted: false,
         currentQuestion: 0,
+        previousQuestion: 0,
         results:[],
         score: 0,
         perc: null,
