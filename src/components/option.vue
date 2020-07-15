@@ -15,11 +15,31 @@
       </div>
       <p class="name">{{ option.type }}</p>
       
+      <select name="" id="" v-if="option.sizes" v-model="size">
+        <option value="" selected>Select a Size</option>
+        <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
+          {{ size }}
+        </option>
+      </select>
+      <select name="" id="" v-if="option.colors" v-model="color">
+        <option value="" selected>Select a Color</option>
+        <option v-for="color in option.colors"  :key="color[index]" :value="color">
+          {{ color }}
+        </option>
+      </select>
+      
+      <select v-if="option.options" v-model="choice">
+        <option value="" selected>Select an Option</option>
+        <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
+          {{ option["name"] }}
+        </option>
+      </select >
       <ul v-if="option.reasons" class="reason">
         <li  v-for="reason in option.reasons" :key="reason.id">
           {{ reason["reason_text"] }}
         </li>
       </ul>
+
       <ul v-if="benefits" class="reason">
         <li  v-for="benefit in benefits" :key="benefit.index">
           {{ benefit }}
@@ -41,6 +61,9 @@
     },
     data(){
       return {
+        color: null,
+        size: null,
+        choice: null,
         selected: null
       }
     },
@@ -48,6 +71,18 @@
       selectionMade(){
         console.log(this.selected)
         this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+      }
+    },
+    computed: {
+      filteredOptions(){
+        let optionData = this.option.options;
+        if(this.color) {
+          optionData = optionData.filter(option => option.color.toLowerCase() === this.color.toLowerCase())
+        }
+        if(this.size) {
+          optionData = optionData.filter(option => option.size === this.size)
+        }
+        return optionData;
       }
     }
   }

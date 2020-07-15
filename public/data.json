@@ -97,7 +97,9 @@
           "option": "pole",
           "type": "coastal-base",
           "product_id": "9159",
-          "sizes":[
+          "sizes": [12,15],
+          "colors": ["Black"],
+          "options":[
             {
               "id": "9172",
               "size": 12,
@@ -118,7 +120,7 @@
             { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
             { "id": "r4", "reason_text": "Easy Shade Attachment"}
           ],
-          "url":"https://www.gemlux.com/Coastal-Hybrid-Flagpole-Fixed-8ft"
+          "url":"https://www.gemlux.com/shop/boat-fishing-outriggers/coastal-outrigger-system/coastal-outriggers"
          },
          {
           "image": "deluxeHybridInternal.jpg", 
@@ -127,6 +129,24 @@
           "type": "deluxe-base",
           "product_name": "18' DELUXE OUTRIGGERS COLLAPSIBLE HYBRID (PAIR)",
           "product_id": "9143",
+          "options": [
+            {
+              "id": "9146",
+              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id": "9145",
+              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id": "9144",
+              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id": "9147",
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Lee's Sidewinder Bases, Black"
+            }
+          ],
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid Construction"},
             { "id": "r2", "reason_text": "Collapsable"},
@@ -139,7 +159,7 @@
           "image": "shade-only.jpg", 
           "text": "Deluxe",
           "option": "pole",
-          "type": "deluxe-base",
+          "type": "",
           "product_id": "10206",
           "reasons": [
             { "id": "r1", "reason_text": "100% carbon fiber"},
@@ -154,8 +174,26 @@
           "text": "Internal",
           "option": "pole",
           "type": "deluxe-base",
-          "product_name": "Internal Hybrid Rigger", 
+          "product_name": "Deluxe Internal Hybrid 16' Rigger", 
           "product_id": "10017",
+          "options": [
+            {
+              "id": "10020",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id": "10019",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id": "10018",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id": "10021",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for Lee's Sidewinder Bases, Black"
+            }
+          ],
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid construction"},
             { "id": "r2", "reason_text": "Sleek clean look"},
@@ -166,10 +204,163 @@
         },
         {
           "image": "bluewaterInternals.jpg", 
-          "text": "Internal Poles",
+          "text": "Internal",
           "option": "pole",
           "type": "bluewater-base",
-          "product_id": "10206",
+          "product_id": "8499",
+          "colors": [
+            "black", "white","custom"
+          ],
+          "sizes": [
+            18,22
+          ],
+          "options": [
+            {
+              "id":"10059",
+              "size":18,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Bluewater Bases"
+            },
+            {
+              "id":"10058",
+              "size":18,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, White"
+            },
+            {
+              "id":"10057",
+              "size":18,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Taco 280/380 Bases, White"
+            },
+            {
+              "id":"10060",
+              "size":18,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Lee's Sidewinder Bases, White"
+            },
+            {
+              "id":"9992",
+              "size":18,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Bluewater Bases, Custom Color"
+            },
+            {
+              "id":"9991",
+              "size":18,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, Custom Color"
+            },
+            {
+              "id":"9990",
+              "size":18,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Taco 280/380 Bases, Custom Color"
+            },
+            {
+              "id":"9993",
+              "size":18,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Lee's Sidewinder Bases, Custom Color"
+            },
+            {
+              "id":"9505",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"9504",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, Black"
+            },
+            {
+              "id":"9503",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"9506",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 18' Internal Rigged Outrigger for Lee's Sidewinder Bases, Black"
+            },
+            {
+              "id":"10063",
+              "size":22,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Bluewater Bases, White"
+            },
+            {
+              "id":"10062",
+              "size":22,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, White"
+            },
+            {
+              "id":"10061",
+              "size":22,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Taco 280/380 Bases, White"
+            },
+            {
+              "id":"10064",
+              "size":22,
+              "color":"White",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Lee's Sidewinder Bases, White"
+            },
+            {
+              "id":"9996",
+              "size":22,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Bluewater Bases, Custom Color"
+            },
+            {
+              "id":"9995",
+              "size":22,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, Custom Color"
+            },
+            {
+              "id":"9994",
+              "size":22,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Taco 280/380 Bases, Custom Color"
+            },
+            {
+              "id":"9997",
+              "size":22,
+              "color":"Custom",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Lee's Sidewinder Bases, Custom Color"
+            },
+            {
+              "id":"8502",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"8501",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for GEMLUX Deluxe, Rupp, Tigress and ETEC Bases, Black"
+            },
+            {
+              "id":"8500",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"8503",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Carbon Fiber 22' Internal Rigged Outrigger for Lee's Sidewinder Bases, Black"
+            }
+
+          ],
           "reasons": [
             { "id": "r1", "reason_text": "100% carbon fiber"},
             { "id": "r2", "reason_text": "Sleek Clean look"},
@@ -180,13 +371,113 @@
         },
         {
           "image": "deluxeHybridInternal.jpg", 
-          "text": "Deluxe Poles",
+          "text": "Collapsible",
           "option": "pole",
           "type": "bluewater-base",
-          "product_id": "10206",
+          "product_id": "5872",
+          "sizes": [18, 22],
+          "colors": ["Black"],
+          "options": [
+            {
+              "id":"5873",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"5874",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id":"5875",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"5981",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger for Lee's Sidewinder Bases, Black"
+            },
+            {
+              "id":"6359",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger, Shade Ring for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"6361",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger, Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id":"6362",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger, Shade Ring for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"6360",
+              "size":18,
+              "color":"Black",
+              "name":"Bluewater Collapsible 18' Carbon Fiber Outrigger, Shade Ring for Lee's Sidewinder Bases, Black"
+            },
+            {
+              "id":"5876",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"5877",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id":"5878",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"5982",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger for Lee's Sidewinder Bases, Black"
+            },
+            {
+              "id":"6363",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger, Shade Ring for GEMLUX Bluewater Bases, Black"
+            },
+            {
+              "id":"6365",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger, Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+            },
+            {
+              "id":"6366",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger, Shade Ring for Taco 280/380 Bases, Black"
+            },
+            {
+              "id":"6364",
+              "size":22,
+              "color":"Black",
+              "name":"Bluewater Collapsible 22' Carbon Fiber Outrigger, Shade Ring for Lee's Sidewinder Bases, Black"
+            }
+          ],
           "reasons": [
             { "id": "r1", "reason_text": "100% carbon fiber"},
-            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r2", "reason_text": "Collapsible"},
             { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
             { "id": "r4", "reason_text": "Shade Attachment Available"}
           ],
