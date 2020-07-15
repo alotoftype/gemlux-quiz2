@@ -45,7 +45,7 @@
         console.log("this goes back",this.currentQuestion)
         if(this.$parent.currentQuestion > 0 && this.$parent.currentQuestion != 0){
           
-          if(this.$parent.results[0].outrigger == "costal base" && this.$parent.currentQuestion == 2 )   {
+          if(this.$parent.results[0].outrigger == "coastal base" && this.$parent.currentQuestion == 2 )   {
             this.$parent.currentQuestion -= 2;
             this.$parent.results.pop()
             this.$parent.results.pop()
@@ -59,7 +59,7 @@
         console.log("this goes forward",this.currentQuestion)
         if(this.$parent.currentQuestion < this.questions.length && this.$parent.currentQuestion != this.questions.length - 1){
           this.$parent.previousQuestion = this.$parent.currentQuestion
-          if(this.$parent.results[0].outrigger == "costal base" && this.$parent.currentQuestion == 0){
+          if(this.$parent.results[0].outrigger == "coastal base" && this.$parent.currentQuestion == 0){
             this.$parent.currentQuestion += 2;
             this.$parent.results[1] = { image:"", outrigger:"",product_id:"",url:"" }
           }
@@ -86,7 +86,7 @@
       renderResults(){
         this.$parent.currentStage = "results"
         console.log("showing off results", this.$parent.results.filter( result => result != undefined));
-        console.log("showubg results url", this.$parent.resultUrl)
+        console.log("showing results url", this.$parent.resultUrl)
       }
     }
   }

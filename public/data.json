@@ -7,12 +7,12 @@
       "question_text":"Please Select Your Base:",
       "options":[ 
         {
-          "image": "costal-base.jpg",
-          "name": "Costal Base",
+          "image": "coastal-base.jpg",
+          "name": "Coastal Base",
           "text": "good",
           "option": "base",
           "description": "Winner of the 2020 Miami Boat Show Innovation Award! Our coastal base series offers endless possibilities for a variety of your boating and fishing needs. We’ve developed a completely new stainless steel patent-pending base design that allows for the ability to position your base at any angle with 22.5-degree increments which provides optimal fishing or shade positioning angles. You can fish with traditional outriggers, use them as Kingfish outriggers or shade all with this system!",
-          "type": "costal base",
+          "type": "coastal base",
           "product_id": "7163",
           "reasons": [
             { "id": "r1", "reason_text": "Very Affordable"},
@@ -55,7 +55,7 @@
     },
     {
       "question_number": 2,
-      "skipQuestion": "Costal Base",
+      "skipQuestion": "Coastal Base",
       "question_text":"Please Select Your Backing Plate:",
       "options":[
         {
@@ -82,7 +82,7 @@
           "image": "shade-only.jpg", 
           "text": "Shade Only",
           "option": "pole",
-          "type": "costal-base",
+          "type": "coastal-base",
           "product_id": "10206",
           "reasons": [
             { "id": "r1", "reason_text": "Collapsable or fixed"},
@@ -95,11 +95,26 @@
           "image": "outriggers+shade.jpg", 
           "text": "OutRiggers + Shade", 
           "option": "pole",
-          "type": "costal-base",
+          "type": "coastal-base",
           "product_id": "9159",
+          "sizes":[
+            {
+              "id": "9172",
+              "size": 12,
+              "name": "Coastal Collapsible Hybrid 12' Center Rigger for GEMLUX Coastal Bases",
+              "color": "Black"
+            },
+            {
+              "id":"9478",
+              "size": 15,
+              "name": "Coastal Collapsible Hybrid 15' Outrigger for GEMLUX Coastal Bases",
+              "color": "Black"
+            }
+          
+          ],
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid Construction"},
-            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r2", "reason_text": "Collapsible"},
             { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
             { "id": "r4", "reason_text": "Easy Shade Attachment"}
           ],

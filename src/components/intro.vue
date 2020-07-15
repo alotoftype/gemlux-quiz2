@@ -2,7 +2,7 @@
   <div class="intro" :style="{ backgroundImage: 'url(' + require('@/assets/VUeThRRw.jpeg') + ')' }">
     <div class="intro_content">
       <h3>Build Your</h3>
-      <p>OutRigger System</p>
+      <p>Outrigger System</p>
       <Button @button-clicked="start" class="start-quiz"></Button>
     </div>
   </div>
