@@ -92,7 +92,11 @@
               }
             if (item.product_id !== '' && item.product_id !== null && item.product_id !== undefined) {
               string += `${item.product_id},1;`;
-            }
+            } 
+            else if( item.product_option_id && item.product_option_id != '' && item.product_option_id != null && item.product_option_id != undefined
+            && item.product_id != '' && item.product_id != null && item.product_id != undefined ){
+              string += `${item.product_id},1;${item.product_option_id},1`;
+            } 
             })
             console.log('string:', string);
 

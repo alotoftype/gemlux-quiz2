@@ -14,26 +14,33 @@
         <label :for="option.product_id">{{ option.text }}</label>
       </div>
       <p class="name">{{ option.type }}</p>
-      
-      <select name="" id="" v-if="option.sizes" v-model="size">
-        <option value="" selected>Select a Size</option>
-        <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
-          {{ size }}
-        </option>
+      <div v-if="option.sizes" class="form-group column left spacer">
+        <label for="size-select">Outrigger Length:</label>
+        <select name="" id="size-select" v-model="size">
+          <option value="" selected>Select a Size</option>
+          <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
+            {{ size }}
+          </option>
+        </select>
+      </div>
+      <div v-if="option.colors" class="form-group column left spacer">
+        <label for="color-select">Outrigger Color</label>
+        <select name="" id="color-select"  v-model="color">
+          <option value="" selected>Select a Color</option>
+          <option v-for="color in option.colors"  :key="color[index]" :value="color">
+            {{ color }}
+          </option>
       </select>
-      <select name="" id="" v-if="option.colors" v-model="color">
-        <option value="" selected>Select a Color</option>
-        <option v-for="color in option.colors"  :key="color[index]" :value="color">
-          {{ color }}
-        </option>
-      </select>
-      
-      <select v-if="option.options" v-model="choice">
-        <option value="" selected>Select an Option</option>
-        <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
-          {{ option["name"] }}
-        </option>
-      </select >
+      </div>
+      <div v-if="option.options" class="form-group column left spacer">
+        <label for="adapter-select">Outrigger Base Adapter</label>
+        <select  id="adapter-select" v-model="choice">
+          <option value="" selected>Select a Base Adapter</option>
+          <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
+            {{ option["name"] }}
+          </option>
+        </select >
+      </div>
       <ul v-if="option.reasons" class="reason">
         <li  v-for="reason in option.reasons" :key="reason.id">
           {{ reason["reason_text"] }}
@@ -70,7 +77,12 @@
     methods: {
       selectionMade(){
         console.log(this.selected)
-        this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+        if(this.choice != null) {
+          this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text, "product_option_id": this.choice, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+        } else {
+          this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+        }
+        
       }
     },
     computed: {
@@ -93,6 +105,7 @@
   .option_item {
     border: 5px solid #193966;
     width: 100%;
+    height: 100%;
     margin: 1rem auto;
     display: flex;
     flex-direction: column;
@@ -146,6 +159,20 @@
 .form-group {
   display: flex;
   align-items: center;
+}
+.column {
+  flex-direction: column;
+}
+.left{  
+  align-items: flex-start;
+}
+.spacer{
+  margin: .5rem 1rem;
+}
+select {
+  width: 100%;
+  padding: .5rem 1rem;
+
 }
 label {
   color: #193966;
