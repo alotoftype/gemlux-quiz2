@@ -15,7 +15,7 @@
       </div>
       <p class="name">{{ option.type }}</p>
       <div v-if="option.sizes" class="form-group column left spacer">
-        <label for="size-select">Outrigger Length:</label>
+        <label class="regular" for="size-select">Outrigger Length:</label>
         <select name="" id="size-select" v-model="size">
           <option value="" selected>Select a Size</option>
           <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
@@ -24,7 +24,7 @@
         </select>
       </div>
       <div v-if="option.colors" class="form-group column left spacer">
-        <label for="color-select">Outrigger Color</label>
+        <label class="regular" for="color-select">Outrigger Color</label>
         <select name="" id="color-select"  v-model="color">
           <option value="" selected>Select a Color</option>
           <option v-for="color in option.colors"  :key="color[index]" :value="color">
@@ -33,7 +33,7 @@
       </select>
       </div>
       <div v-if="option.options" class="form-group column left spacer">
-        <label for="adapter-select">Outrigger Base Adapter</label>
+        <label class="regular" for="adapter-select">Outrigger Base Adapter</label>
         <select  id="adapter-select" v-model="choice">
           <option value="" selected>Select a Base Adapter</option>
           <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
@@ -186,15 +186,34 @@ p {
   margin-left: 3.8rem;
   margin-top: .2rem;
 }
+.regular {
+  font-size: initial;
+}
 .name {
   color: #193966; 
 }
 .learn-more {
+  color: #fff; 
   text-align: center;
   padding: 1rem 1.5rem;
   margin: 0 auto;
   margin-bottom: 1.5rem;
   max-width: 50%;
   border: solid #193966;
+  background-color:#193966; 
+  
+  &:hover {
+    background-color: #fff;
+    color: #193966;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+    
+  &:hover {
+    color: #193966;
+  }
+  }
 }
 </style>
