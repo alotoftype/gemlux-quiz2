@@ -69,7 +69,7 @@
           "image": "backingPlate.png",
           "text": "Rectangle",
           "type": "backingPlate",
-          "product_id": "184",
+          "product_id": "5906",
           "url":"https://www.gemlux.com/OR-BP-02"
         }
       ]
@@ -97,8 +97,6 @@
           "option": "pole",
           "type": "coastal-base",
           "product_id": "9159",
-          "sizes": [12,15],
-          "colors": ["Black"],
           "options":[
             {
               "id": "9172",
@@ -526,21 +524,21 @@
           "image": "shade-only.jpg",
           "text": "small",
           "option": "shade",
-          "product_id":"6816",
+          "product_id":"10230",
           "url": "https://gemlux.com/OR-SH-01" 
         },
         {
           "image": "shade-only.jpg",
           "text": "medium",
           "option": "shade",
-          "product_id":"6815", 
+          "product_id":"10231", 
           "url": "https://www.gemlux.com/Fly-Shade-Medium_2" 
         },
         {
           "image": "shade-only.jpg",
           "text": "large",
           "option": "shade", 
-          "product_id":"6814",
+          "product_id":"10232",
           "url": "https://www.gemlux.com/Fly-Shade-Large_2" 
         }
       ],
