@@ -16,7 +16,7 @@
       <p class="name">{{ option.type }}</p>
       <div v-if="option.sizes" class="form-group column left spacer">
         <label class="regular" for="size-select">Outrigger Length:</label>
-        <select name="" id="size-select" v-model="size">
+        <select name="" id="size-select" v-model="size" required aria-required="true">
           <option value="" selected>Select a Size</option>
           <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
             {{ size }}
@@ -25,7 +25,7 @@
       </div>
       <div v-if="option.colors" class="form-group column left spacer">
         <label class="regular" for="color-select">Outrigger Color</label>
-        <select name="" id="color-select"  v-model="color">
+        <select name="" id="color-select"  v-model="color" required aria-required="true">
           <option value="" selected>Select a Color</option>
           <option v-for="color in option.colors"  :key="color[index]" :value="color">
             {{ color }}
@@ -34,7 +34,7 @@
       </div>
       <div v-if="option.options" class="form-group column left spacer">
         <label class="regular" for="adapter-select">Outrigger Base Adapter</label>
-        <select  id="adapter-select" v-model="choice">
+        <select  id="adapter-select" v-model="choice" required aria-required="true">
           <option value="" selected>Select a Base Adapter</option>
           <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
             {{ option["name"] }}
