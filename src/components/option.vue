@@ -76,13 +76,13 @@
     },
     methods: {
       selectionMade(){
+          if(this.choice != null) {
+            this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text, "product_option_id": this.choice, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+          } else {
+            this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
+          } 
         console.log(this.selected)
-        if(this.choice != null) {
-          this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text, "product_option_id": this.choice, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
-        } else {
-          this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
-        }
-        
+        return this.selected
       }
     },
     computed: {
@@ -172,6 +172,9 @@
 select {
   width: 100%;
   padding: .5rem 1rem;
+
+&:focus:required:invalid,
+&:required {border: 2px solid red;}
 
 }
 label {
