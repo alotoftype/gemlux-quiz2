@@ -33,7 +33,7 @@
       </select>
       </div>
       <div v-if="option.options" class="form-group column left spacer">
-        <label class="regular" for="adapter-select">Outrigger Base Adapter</label>
+        <label class="regular" for="adapter-select">Outrigger Options</label>
         <select  id="adapter-select" v-model="choice" required aria-required="true">
           <option value="" selected>Select a Base Adapter</option>
           <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
