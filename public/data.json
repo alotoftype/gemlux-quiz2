@@ -19,7 +19,7 @@
             { "id": "r2", "reason_text": "Outriggers or Shade"},
             { "id": "r3", "reason_text": "360 Degree Adjustability"}
           ],
-          "url": "https://www.gemlux.com/OR-BA-21"
+          "url": "https://www.gemlux.com/shop/boat-fishing-outriggers/coastal-outrigger-system"
         },
         {
           "image": "deluxebaseimage.jpg",
@@ -34,7 +34,7 @@
             { "id": "r2", "reason_text": "Easy Refit, Drop In Replacement"},
             { "id": "r3", "reason_text": "Economical Solution"}
           ],
-          "url":"https://www.gemlux.com/OR-BA-21"
+          "url":"https://www.gemlux.com/shop/boat-fishing-outriggers/deluxe-outrigger-system/deluxe-outrigger-bases"
          },
         {
           "image": "bluewater-base.jpg",
@@ -70,6 +70,13 @@
           "text": "Rectangle",
           "type": "backingPlate",
           "product_id": "5906",
+          "url":"https://www.gemlux.com/OR-BP-02"
+        },
+        {
+          "image": "backingPlate.png",
+          "text": "No Backing Plate",
+          "type": "backingPlate",
+          "product_id": "",
           "url":"https://www.gemlux.com/OR-BP-02"
         }
       ]
@@ -130,19 +137,19 @@
           "options": [
             {
               "id": "9146",
-              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for GEMLUX Bluewater Bases, Black"
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for GEMLUX Bluewater, Black"
             },
             {
               "id": "9145",
-              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases, Black"
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC, Black"
             },
             {
               "id": "9144",
-              "name": "Deluxe  Collapsible Hybrid 18' Outrigger for Taco 280/380 Bases, Black"
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Taco 280/380, Black"
             },
             {
               "id": "9147",
-              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Lee's Sidewinder Bases, Black"
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Lee's Sidewinder, Black"
             }
           ],
           "reasons": [
@@ -177,19 +184,19 @@
           "options": [
             {
               "id": "10020",
-              "name": "Bluewater Bases"
+              "name": "Bluewater"
             },
             {
               "id": "10019",
-              "name": "Rupp, Tigress, and ETEC Bases"
+              "name": "Rupp, Tigress, and ETEC"
             },
             {
               "id": "10018",
-              "name": "Taco 280/380 Bases"
+              "name": "Taco 280/380"
             },
             {
               "id": "10021",
-              "name": "Lee's Sidewinder Bases"
+              "name": "Lee's Sidewinder"
             }
           ],
           "reasons": [
@@ -217,85 +224,85 @@
               "id":"10059",
               "size":18,
               "color":"White",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"10058",
               "size":18,
               "color":"White",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"10057",
               "size":18,
               "color":"White",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"10060",
               "size":18,
               "color":"White",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             },
             {
               "id":"9992",
               "size":18,
               "color":"Custom",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"9991",
               "size":18,
               "color":"Custom",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"9990",
               "size":18,
               "color":"Custom",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"9993",
               "size":18,
               "color":"Custom",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             },
             {
               "id":"9505",
               "size":18,
               "color":"Black",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"9504",
               "size":18,
               "color":"Black",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"9503",
               "size":18,
               "color":"Black",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"9506",
               "size":18,
               "color":"Black",
-              "name":"Lee's Sidewinder Bases, Black"
+              "name":"Lee's Sidewinder, Black"
             },
             {
               "id":"10063",
               "size":22,
               "color":"White",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"10062",
               "size":22,
               "color":"White",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"10061",
@@ -307,55 +314,55 @@
               "id":"10064",
               "size":22,
               "color":"White",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             },
             {
               "id":"9996",
               "size":22,
               "color":"Custom",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"9995",
               "size":22,
               "color":"Custom",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"9994",
               "size":22,
               "color":"Custom",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"9997",
               "size":22,
               "color":"Custom",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             },
             {
               "id":"8502",
               "size":22,
               "color":"Black",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"8501",
               "size":22,
               "color":"Black",
-              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC"
             },
             {
               "id":"8500",
               "size":22,
               "color":"Black",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"8503",
               "size":22,
               "color":"Black",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             }
 
           ],
@@ -384,61 +391,61 @@
               "id":"5873",
               "size":18,
               "color":"Black",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"5874",
               "size":18,
               "color":"Black",
-              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC"
             },
             {
               "id":"5875",
               "size":18,
               "color":"Black",
-              "name":"Taco 280/380 Bases"
+              "name":"Taco 280/380"
             },
             {
               "id":"5981",
               "size":18,
               "color":"Black",
-              "name":"Lee's Sidewinder Bases"
+              "name":"Lee's Sidewinder"
             },
             {
               "id":"6359",
               "size":18,
               "color":"Black",
-              "name":"Shade Ring for GEMLUX Bluewater Bases"
+              "name":"Shade Ring for GEMLUX Bluewater"
             },
             {
               "id":"6361",
               "size":18,
               "color":"Black",
-              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases"
+              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC"
             },
             {
               "id":"6362",
               "size":18,
               "color":"Black",
-              "name":"Shade Ring for Taco 280/380 Bases"
+              "name":"Shade Ring for Taco 280/380"
             },
             {
               "id":"6360",
               "size":18,
               "color":"Black",
-              "name":"Shade Ring for Lee's Sidewinder Bases"
+              "name":"Shade Ring for Lee's Sidewinder"
             },
             {
               "id":"5876",
               "size":22,
               "color":"Black",
-              "name":"GEMLUX Bluewater Bases"
+              "name":"GEMLUX Bluewater"
             },
             {
               "id":"5877",
               "size":22,
               "color":"Black",
-              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases"
+              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC"
             },
             {
               "id":"5878",
@@ -456,25 +463,25 @@
               "id":"6363",
               "size":22,
               "color":"Black",
-              "name":"Shade Ring for GEMLUX Bluewater Bases"
+              "name":"Shade Ring for GEMLUX Bluewater"
             },
             {
               "id":"6365",
               "size":22,
               "color":"Black",
-              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC Bases"
+              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC"
             },
             {
               "id":"6366",
               "size":22,
               "color":"Black",
-              "name":"Shade Ring for Taco 280/380 Bases"
+              "name":"Shade Ring for Taco 280/380 "
             },
             {
               "id":"6364",
               "size":22,
               "color":"Black",
-              "name":"Shade Ring for Lee's Sidewinder Bases"
+              "name":"Shade Ring for Lee's Sidewinder"
             }
           ],
           "reasons": [
