@@ -73,11 +73,11 @@
           "url":"https://www.gemlux.com/OR-BP-02"
         },
         {
-          "image": "backingPlate.png",
+          "image": "noBackingPlate.png",
           "text": "No Backing Plate",
           "type": "backingPlate",
           "product_id": "",
-          "url":"https://www.gemlux.com/OR-BP-02"
+          "url":""
         }
       ]
     },
