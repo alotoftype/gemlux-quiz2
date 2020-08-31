@@ -9,6 +9,7 @@
       :benefits="question.benefits"
       ></Option>
       </div>
+
        <div class="option_container" v-else>
         <Option
       v-for="option in question.options"

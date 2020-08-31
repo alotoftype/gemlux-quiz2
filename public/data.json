@@ -504,6 +504,12 @@
           "text": "single", 
           "option": "rigging",
           "product_id":"10082",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX SINGLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
           "url": "https://www.gemlux.com/Single-Outrigger-Rigging-Kit"
          },
         {
@@ -511,6 +517,12 @@
           "text": "double", 
           "option": "rigging",
           "product_id":"10085",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX DOUBLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
           "url": "https://www.gemlux.com/Double-Outrigger-Rigging-Kit"
         },
         {
@@ -518,13 +530,14 @@
           "text": "triple",
           "option": "rigging",
           "product_id":"10088",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX TRIPLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
           "url": "https://www.gemlux.com/Triple-Outrigger-Rigging-Kit" 
         }
-      ],
-      "benefits": [
-          "UV RESISTANT LINE",
-          "GEMLUX HALYARDS",
-          "ALL NECESSARY HARDWARE TO RIG"
       ]
     },
     {
