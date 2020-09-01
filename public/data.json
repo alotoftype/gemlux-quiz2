@@ -549,7 +549,7 @@
           "text": "small",
           "option": "shade",
           "product_id":"10230",
-          "url": "https://gemlux.com/OR-SH-01" 
+          "url": "https://www.gemlux.com/Fly-Shade-Small_2" 
         },
         {
           "image": "shade-only.jpg",
@@ -564,7 +564,15 @@
           "option": "shade", 
           "product_id":"10232",
           "url": "https://www.gemlux.com/Fly-Shade-Large_2" 
+        },
+        {
+          "image": "noBackingPlate.png",
+          "text": "No Shade",
+          "option": "shade", 
+          "product_id":"",
+          "url": "https://www.gemlux.com/Fly-Shade-Small_2" 
         }
+        
       ],
       "benefits": [
         "New Lightweight Material", 
