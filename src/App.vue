@@ -70,7 +70,7 @@
     },
     methods: {
         fetchData(){
-          axios.get('data.json').then(response => {
+          axios.get('data-shopify.json').then(response => {
             this.title = response.data.title
             this.questions = response.data.questions
           })
@@ -82,7 +82,7 @@
         },
         addToCartUrl(){
           function createdUrl(arr){
-            let url = ' http://gemlux.com/app/site/query/additemtocart.nl?c=1019389&n=3&buyid=multi&multi='
+            let url = 'https://shop-gemlux.myshopify.com/cart'
             let string = "";
             let combinedUrl = "";
             let len = arr.length - 1;
