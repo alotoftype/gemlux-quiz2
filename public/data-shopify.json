@@ -1,0 +1,686 @@
+{
+  "title": "Outrigger Quiz",
+  "questions": [
+    {
+      "question_number": 1,
+      "skipQuestion": "none",
+      "question_text":"Please Select Your Base:",
+      "options":[ 
+        {
+          "image": "coastal-base.jpg",
+          "name": "Coastal Base",
+          "text": "good",
+          "option": "base",
+          "description": "Winner of the 2020 Miami Boat Show Innovation Award! Our coastal base series offers endless possibilities for a variety of your boating and fishing needs. We’ve developed a completely new stainless steel patent-pending base design that allows for the ability to position your base at any angle with 22.5-degree increments which provides optimal fishing or shade positioning angles. You can fish with traditional outriggers, use them as Kingfish outriggers or shade all with this system!",
+          "type": "coastal base",
+          "product_id": "36700741959834",
+          "reasons": [
+            { "id": "r1", "reason_text": "Very Affordable"},
+            { "id": "r2", "reason_text": "Outriggers or Shade"},
+            { "id": "r3", "reason_text": "360 Degree Adjustability"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/products/7163"
+        },
+        {
+          "image": "deluxebaseimage.jpg",
+          "name": "Deluxe Base",
+          "text": "Better",
+          "option": "base",
+          "description": "You’ll find this base is ideal for boats 18'-25', but can also be used in some applications outside this range. The Deluxe Base was designed with bait fishing in mind, allowing for multiple baits and taglines. Our one-handle design allows for complete adjustment from underneath the T-Top. Up, down, in and out, making them much easier and safer to use in rough offshore conditions. The Deluxe bases are designed to be used with 16' and 18’ outriggers, in which we have created a new hybrid pole for this specific base. This new pole is a carbon fiber blend specifically designed for offshore fishing. This allows for a more affordable pole option, yet still providing the quality and durability Gemlux is known for. This uses a 1.5” tube and will hold any pole that is 1.5\".",
+          "type": "deluxe base",
+          "product_id": "36700742844570",
+          "reasons": [
+            { "id": "r1", "reason_text": "Full Functionality"},
+            { "id": "r2", "reason_text": "Easy Refit, Drop In Replacement"},
+            { "id": "r3", "reason_text": "Economical Solution"}
+          ],
+          "url":"https://shop-gemlux.myshopify.com/products/7168"
+         },
+        {
+          "image": "bluewater-base.jpg",
+          "name": "Bluewater Base",
+          "text": "Best",
+          "option": "base",
+          "description": "Our patented one-handle operation allows for complete adjustment of your outriggers from underneath the T-top. Up, down, in and out, making them much safer to use during rough offshore conditions. Stainless steel roller bearings make these the smoothest operating and most user-friendly bases on the market. GEMLUX® Deluxe Carbon Fiber Outriggers were designed to the highest standard for Outriggers in the fishing industry. With pole lengths up to 22ft, The GEMLUX® Fishing System enables you to fish a wider spread, keeping your baits and teasers in clean water where the fish can see them. Getting your spread outside the whitewater also lets you see the fish much better for a more exciting trolling experience. Troll heavy dredges, multiple baits, and even high-speed troll from the tips with weighted wahoo lures. The Gemlux® Fishing System brings the advantages of a sportfish boat to your center console!",
+          "type": "bluewater base",
+          "product_id": "36700739109018",
+          "reasons": [
+            { "id": "r1", "reason_text": "Best Of The Best!"},
+            { "id": "r2", "reason_text": "Supports Extreme Fishing Techniques"},
+            { "id": "r3", "reason_text": "One Handled, Easy Operation"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/products/5030" 
+        }
+      ]
+    },
+    {
+      "question_number": 2,
+      "skipQuestion": "Coastal Base",
+      "question_text":"Please Select Your Backing Plate:",
+      "options":[
+        {
+          "image": "backingPlateRound.png",
+          "text": "Round",
+          "type": "backingPlate",
+          "product_id": "36700742058138",
+          "url":"https://shop-gemlux.myshopify.com/products/5905"
+        },
+        {
+          "image": "backingPlate.png",
+          "text": "Rectangle",
+          "type": "backingPlate",
+          "product_id": "36700741501082",
+          "url":"https://shop-gemlux.myshopify.com/products/5906"
+        },
+        {
+          "image": "noBackingPlate.png",
+          "text": "No Backing Plate",
+          "type": "backingPlate",
+          "product_id": "",
+          "url":""
+        }
+      ]
+    },
+    {
+      "question_number": 3,
+      "question_text":"Please Select Your Pole Option:",
+      "options":[ 
+        {
+          "image": "shade-only.jpg", 
+          "text": "Shade Only",
+          "option": "pole",
+          "type": "coastal-base",
+          "product_id": "36700679995546",
+          "reasons": [
+            { "id": "r1", "reason_text": "Collapsable or fixed"},
+            { "id": "r2", "reason_text": "Easy Shade Attachment"},
+            { "id": "r3", "reason_text": "24/7 Shade"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/products/10206" 
+        },
+        {
+          "image": "outriggers+shade.jpg", 
+          "text": "OutRiggers + Shade", 
+          "option": "pole",
+          "type": "coastal-base",
+          "product_id": "9159",
+          "options":[
+            {
+              "id": "36700773056666",
+              "size": 12,
+              "name": "12' COASTAL OUTRIGGER, COLLAPSIBLE HYBRID (PAIR)",
+              "color": "Black",
+              "url":"https://shop-gemlux.myshopify.com/products/9172"
+            },
+            {
+              "id":"36700773089434",
+              "size": 15,
+              "name": "15' COASTAL OUTRIGGER, COLLAPSIBLE HYBRID (PAIR)",
+              "color": "Black",
+              "url":"https://shop-gemlux.myshopify.com/products/9478"
+            }
+          
+          ],
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid Construction"},
+            { "id": "r2", "reason_text": "Collapsible"},
+            { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
+            { "id": "r4", "reason_text": "Easy Shade Attachment"}
+          ],
+          "url":"https://shop-gemlux.myshopify.com/collections/coastal-boat-outrigger-system"
+         },
+         {
+          "image": "deluxeHybridInternal.jpg", 
+          "text": "Hybrid",
+          "option": "pole",
+          "type": "deluxe-base",
+          "product_name": "18' DELUXE OUTRIGGERS COLLAPSIBLE HYBRID (PAIR)",
+          "product_id": "36817478156442",
+          "options": [
+            {
+              "id": "36817478156442",
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for GEMLUX Bluewater, Black",
+              "url":"36817478123674"
+            },
+            {
+              "id": "36817478123674",
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC, Black",
+              "url":"https://shop-gemlux.myshopify.com/admin/products/5789991633050"
+            },
+            {
+              "id": "36817478090906",
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Taco 280/380, Black",
+              "url":"https://shop-gemlux.myshopify.com/admin/products/5789991633050"
+            },
+            {
+              "id": "36817478189210",
+              "name": "Deluxe Collapsible Hybrid 18' Outrigger for Lee's Sidewinder, Black",
+              "url":"https://shop-gemlux.myshopify.com/admin/products/5789991633050"
+            }
+          ],
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid Construction"},
+            { "id": "r2", "reason_text": "Collapsible" },
+            { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/collections/all/products/9146" 
+        },
+        {
+          "image": "shade-only.jpg", 
+          "text": "Deluxe",
+          "option": "pole",
+          "type": "",
+          "product_id": "5789978787994",
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "collapsible"},
+            { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/collections/all/products/10206" 
+        },
+        {
+          "image": "bluewaterInternals.jpg", 
+          "text": "Internal",
+          "option": "pole",
+          "type": "deluxe-base",
+          "product_name": "Deluxe Internal Hybrid 16' Rigger", 
+          "product_id": "10017",
+          "options": [
+            {
+              "id": "36817429856410",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for GEMLUX Bluewater, Black",
+              "url":"https://shop-gemlux.myshopify.com/products/10020"
+            },
+            {
+              "id": "36817429823642",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for GEMLUX Deluxe, Rupp, Tigress, and ETEC, Black",
+              "url":"https://shop-gemlux.myshopify.com/products/10020"
+            },
+            {
+              "id": "36817429758106",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for Taco 280/380, Black",
+              "url":"https://shop-gemlux.myshopify.com/products/10020"
+            },
+            {
+              "id": "36817429889178",
+              "name": "Deluxe Internal Hybrid 16' Outrigger for Lee's Sidewinder, Black",
+              "url":"https://shop-gemlux.myshopify.com/products/10020"
+            }
+          ],
+          "reasons": [
+            { "id": "r1", "reason_text": "Hybrid construction"},
+            { "id": "r2", "reason_text": "Sleek clean look"},
+            { "id": "r3", "reason_text": "Internal Rigging"},
+            { "id": "r4", "reason_text": "No shade Attachment"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/collections/all/products/10206" 
+        },
+        {
+          "image": "bluewaterInternals.jpg", 
+          "text": "Internal",
+          "option": "pole",
+          "type": "bluewater-base",
+          "product_id": "5865186918554",
+          "colors": [
+            "black", "white","custom"
+          ],
+          "sizes": [
+            18,22
+          ],
+          "options": [
+            {
+              "id":"36815981609114",
+              "size":18,
+              "color":"White",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981576346",
+              "size":18,
+              "color":"White",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981543578",
+              "size":18,
+              "color":"White",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981641882",
+              "size":18,
+              "color":"White",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981412506",
+              "size":18,
+              "color":"Custom",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981379738",
+              "size":18,
+              "color":"Custom",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981346970",
+              "size":18,
+              "color":"Custom",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981510810",
+              "size":18,
+              "color":"Custom",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981183130",
+              "size":18,
+              "color":"Black",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981281434",
+              "size":18,
+              "color":"Black",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981117594",
+              "size":18,
+              "color":"Black",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981215898",
+              "size":18,
+              "color":"Black",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982198938",
+              "size":22,
+              "color":"White",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982166170",
+              "size":22,
+              "color":"White",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982133402",
+              "size":22,
+              "color":"White",
+              "name":"Taco 280/380 Bases",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982231706",
+              "size":22,
+              "color":"White",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982002330",
+              "size":22,
+              "color":"Custom",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981969562",
+              "size":22,
+              "color":"Custom",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981936794",
+              "size":22,
+              "color":"Custom",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815982035098",
+              "size":22,
+              "color":"Custom",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981805722",
+              "size":22,
+              "color":"Black",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981772954",
+              "size":22,
+              "color":"Black",
+              "name":"GEMLUX Deluxe, Rupp, Tigress and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981740186",
+              "size":22,
+              "color":"Black",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            },
+            {
+              "id":"36815981838490",
+              "size":22,
+              "color":"Black",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/bluewater-internal-carbon-fiber-outriggers-pair"
+            }
+
+          ],
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "Sleek Clean look"},
+            { "id": "r3", "reason_text": "Internal Rigging"},
+            { "id": "r4", "reason_text": "No Shade Attachment"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/products/12-bluewater-internal-carbon-fiber-center-rigger-single" 
+        },
+        {
+          "image": "deluxeHybridInternal.jpg", 
+          "text": "Collapsible",
+          "option": "pole",
+          "type": "bluewater-base",
+          "product_id": "5789991633050",
+          "colors": [
+            "black"
+          ],
+          "sizes": [
+            18,22
+          ],
+          "options": [
+            {
+              "id":"36816456777882",
+              "size":18,
+              "color":"Black",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456712346",
+              "size":18,
+              "color":"Black",
+              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456646810",
+              "size":18,
+              "color":"Black",
+              "name":"Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456843418",
+              "size":18,
+              "color":"Black",
+              "name":"Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456810650",
+              "size":18,
+              "color":"Black",
+              "name":"Shade Ring for GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456745114",
+              "size":18,
+              "color":"Black",
+              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456679578",
+              "size":18,
+              "color":"Black",
+              "name":"Shade Ring for Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816456908954",
+              "size":18,
+              "color":"Black",
+              "name":"Shade Ring for Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457203866",
+              "size":22,
+              "color":"Black",
+              "name":"GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457138330",
+              "size":22,
+              "color":"Black",
+              "name":"GEMLUX Deluxe, Rupp, Tigress, and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457072794",
+              "size":22,
+              "color":"Black",
+              "name":"Taco 280/380 Bases",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457269402",
+              "size":22,
+              "color":"Black",
+              "name":"Lee's Sidewinder Bases",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457236634",
+              "size":22,
+              "color":"Black",
+              "name":"Shade Ring for GEMLUX Bluewater",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457171098",
+              "size":22,
+              "color":"Black",
+              "name":"Shade Ring for GEMLUX Deluxe, Rupp, Tigress, and ETEC",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457105562",
+              "size":22,
+              "color":"Black",
+              "name":"Shade Ring for Taco 280/380",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            },
+            {
+              "id":"36816457302170",
+              "size":22,
+              "color":"Black",
+              "name":"Shade Ring for Lee's Sidewinder",
+              "url":"https://shop-gemlux.myshopify.com/products/copy-of-bluewater-collapsible-18-carbon-fiber-outrigger-for-gemlux-bluewater-bases-black"
+            }
+          ],
+          "reasons": [
+            { "id": "r1", "reason_text": "100% carbon fiber"},
+            { "id": "r2", "reason_text": "Collapsible"},
+            { "id": "r3", "reason_text": "Integrated Rollers and clamps"},
+            { "id": "r4", "reason_text": "Shade Attachment Available"}
+          ],
+          "url": "https://shop-gemlux.myshopify.com/products/9146" 
+        }
+      ]
+    },
+    {
+      "question_number": 4,
+      "question_text":"Please Select Your Rigging Kit:",
+      "info": "Measure the width between your bases to find the correct size shade for your boat",
+      "options":[ 
+        {
+          "image": "single.jpg",
+          "text": "single", 
+          "option": "rigging",
+          "product_id":"36817560240282",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX SINGLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
+          "url": "https://shop-gemlux.myshopify.com/products/10082"
+         },
+        {
+          "image": "double.jpg",
+          "text": "double", 
+          "option": "rigging",
+          "product_id":"36817688035482",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX DOUBLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
+          "url": "https://shop-gemlux.myshopify.com/products/double-outrigger-rigging-kit"
+        },
+        {
+          "image": "triple.jpg",
+          "text": "triple",
+          "option": "rigging",
+          "product_id":"36817630855322",
+          "colors": [ "black",  "white"],
+          "reasons": [
+            { "id": "b1", "reason_text": "UV RESISTANT LINE" },
+            { "id": "b2", "reason_text": "GEMLUX TRIPLE HALYARDS"},
+            { "id": "b3", "reason_text": "ALL NECESSARY HARDWARE TO RIG"}
+        ],
+          "url": "https://shop-gemlux.myshopify.com/products/10090" 
+        }
+      ]
+    },
+    {
+      "question_number": 5,
+      "question_text":"Please Select Your Shade:",
+      "options":[ 
+        {
+          "image": "shade-only.jpg",
+          "text": "small",
+          "option": "shade",
+          "product_id":"36700779053210",
+          "url": "https://shop-gemlux.myshopify.com/products/10230" 
+        },
+        {
+          "image": "shade-only.jpg",
+          "text": "medium",
+          "option": "shade",
+          "product_id":"36700778725530", 
+          "url": "https://shop-gemlux.myshopify.com/products/10231" 
+        },
+        {
+          "image": "shade-only.jpg",
+          "text": "large",
+          "option": "shade", 
+          "product_id":"36700779118746",
+          "url": "https://shop-gemlux.myshopify.com/products/10232" 
+        },
+        {
+          "image": "noBackingPlate.png",
+          "text": "No Shade",
+          "option": "shade", 
+          "product_id":"",
+          "url": "https://www.gemlux.com/Fly-Shade-Small_2" 
+        }
+        
+      ],
+      "benefits": [
+        "New Lightweight Material", 
+        "Easy to Setup", 
+        "Easy to Store"
+      ]
+    }
+  ],
+  "independentShade": [
+    {
+      "question_text":"Please Select Your Pole Option:",
+      "options":[ 
+        {
+          "image": "9ftShadePoles.jpg", 
+          "text": "9FT Collapssable",
+          "option-type": "pole",
+          "product_id": "36700679995546",
+          "url": "https://shop-gemlux.myshopify.com/products/10206"
+        },
+        {
+          "image": "8ftFlagpole.jpg", 
+          "text": "8FT fixed",
+          "option-type": "pole", 
+          "product_id": "36700679864474",
+          "url":"https://shop-gemlux.myshopify.com/products/9159" 
+        }
+      ]
+    },
+    {
+      "question_text":"Please Select Your Shade:",
+      "options":[ 
+        {
+          "image": "single.jpg",
+          "text": "small",
+          "option-type": "shade",
+          "product_id":"36700778102938",
+          "url": "https://shop-gemlux.myshopify.com/products/6816" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "medium",
+          "option-type": "shade",
+          "product_id":"36700778070170", 
+          "url": "https://shop-gemlux.myshopify.com/products/6815" 
+        },
+        {
+          "image": "single.jpg",
+          "text": "large",
+          "option-type": "shade", 
+          "product_id":"36700779085978",
+          "url": "https://shop-gemlux.myshopify.com/products/6814" 
+        }
+      ],
+      "benefits": [
+        "New Lightweight Material", 
+        "Easy to Setup", 
+        "Easy to Store"
+      ]
+    }
+  ]
+}
