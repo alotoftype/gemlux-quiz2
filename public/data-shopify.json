@@ -135,7 +135,7 @@
           "option": "pole",
           "type": "deluxe-base",
           "product_name": "18' DELUXE OUTRIGGERS COLLAPSIBLE HYBRID (PAIR)",
-          "product_id": "9146",
+          "product_id": "36817478156442",
           "options": [
             {
               "id": "36817478156442",
@@ -160,7 +160,7 @@
           ],
           "reasons": [
             { "id": "r1", "reason_text": "Hybrid Construction"},
-            { "id": "r2", "reason_text": "Collapsable"},
+            { "id": "r2", "reason_text": "Collapsible" },
             { "id": "r3", "reason_text": "Integrated Rollers and Clamps"},
             { "id": "r4", "reason_text": "Shade Attachment Available"}
           ],
@@ -566,7 +566,7 @@
           "image": "double.jpg",
           "text": "double", 
           "option": "rigging",
-          "product_id":"5865553166490",
+          "product_id":"36817688035482",
           "colors": [ "black",  "white"],
           "reasons": [
             { "id": "b1", "reason_text": "UV RESISTANT LINE" },
@@ -579,7 +579,7 @@
           "image": "triple.jpg",
           "text": "triple",
           "option": "rigging",
-          "product_id":"5789993631898",
+          "product_id":"36817630855322",
           "colors": [ "black",  "white"],
           "reasons": [
             { "id": "b1", "reason_text": "UV RESISTANT LINE" },
