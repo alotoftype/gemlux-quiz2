@@ -78,7 +78,6 @@
         startQuiz(){
           this.isQuizStarted = true;
           this.currentStage = 'quiz-started';
-          console.log('start the quiz')
         },
         addToCartUrl(){
           function createdUrl(arr){
@@ -98,10 +97,9 @@
               string += `${item.product_id}:1,${item.product_option_id}:1`;
             } 
             })
-            console.log('string:', string);
+ 
 
             combinedUrl = url + string;
-            console.log(combinedUrl)
             return combinedUrl;
           }
           if(this.results && this.results.length != 0) {
