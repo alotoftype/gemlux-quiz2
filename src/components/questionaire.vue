@@ -61,7 +61,7 @@
           this.$parent.previousQuestion = this.$parent.currentQuestion
           if(this.$parent.results[0].outrigger == "coastal base" && this.$parent.currentQuestion == 0){
             this.$parent.currentQuestion += 2;
-            this.$parent.results[1] = { image:"", outrigger:"",product_id:"",url:"" }
+            this.$parent.results[1] = { image:"", outrigger:"",variant_id:"",url:"" }
           }
           else {
             this.$parent.currentQuestion += 1;

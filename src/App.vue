@@ -81,23 +81,15 @@
         },
         addToCartUrl(){
           function createdUrl(arr){
-            let url = 'https://shop-gemlux.myshopify.com/cart/'
+            let url = 'https://shop-gemlux.myshopify.com/cart/';
             let string = "";
             let combinedUrl = "";
-            let len = arr.length - 1;
-            arr.forEach(function(item, index){
-              if(index===(len-1)) {
-                console.log('last one');
+
+            arr.forEach(function (item) {
+              if (item.variant_id) {
+                string += `${item.variant_id}:1,`;
               }
-            if (item.product_id !== '' && item.product_id !== null && item.product_id !== undefined) {
-              string += `${item.product_id}:1,`;
-            } 
-            else if( item.product_option_id && item.product_option_id != '' && item.product_option_id != null && item.product_option_id != undefined
-            && item.product_id != '' && item.product_id != null && item.product_id != undefined ){
-              string += `${item.product_id}:1,${item.product_option_id}:1`;
-            } 
-            })
- 
+            });
 
             combinedUrl = url + string;
             return combinedUrl;
