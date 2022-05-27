@@ -3,101 +3,94 @@
     <img :src="require(`@/assets/images/${option.image}`)" alt="">
     <div class="container">
       <div class="form-group">
-        <input type="radio" 
-        :name="option.option" 
-        :id="option.product_id" 
-        :value="option.product_id" 
-        v-model="selected"
-        :required="!selected"
-        @change="selectionMade"
-        > 
-        <label :for="option.product_id">{{ option.text }}</label>
+        <input type="radio" name="variant_id" :id="option.variant_id" :value="option.variant_id" v-model="selected"
+          :required="!selected" @change="selectionMade">
+        <label :for="option.variant_id">{{ option.text }}</label>
       </div>
       <p class="name">{{ option.type }}</p>
       <div v-if="option.sizes" class="form-group column left spacer">
         <label class="regular" for="size-select">Outrigger Length:</label>
-        <select name="" id="size-select" v-model="size" required aria-required="true">
+        <select name="" id="size-select" v-model="size" required aria-required="true" @change="selectionMade">
           <option value="" selected>Select a Size</option>
-          <option v-for="(size,index) in option.sizes"  :key="index" :value="size">
+          <option v-for="(size, index) in option.sizes" :key="index" :value="size">
             {{ size }}
           </option>
         </select>
       </div>
       <div v-if="option.colors" class="form-group column left spacer">
         <label class="regular" for="color-select">Outrigger Color</label>
-        <select name="" id="color-select"  v-model="color" required aria-required="true">
+        <select name="" id="color-select" v-model="color" required aria-required="true" @change="selectionMade">
           <option value="" selected>Select a Color</option>
-          <option v-for="color in option.colors"  :key="color[index]" :value="color">
+          <option v-for="(color, index) in option.colors" :key="index" :value="color">
             {{ color }}
           </option>
-      </select>
+        </select>
       </div>
-      <div v-if="option.options" class="form-group column left spacer">
+      <div v-if="option.names" class="form-group column left spacer">
         <label class="regular" for="adapter-select">Outrigger Options</label>
-        <select  id="adapter-select" v-model="choice" required aria-required="true">
+        <select id="adapter-select" v-model="name" required aria-required="true" @change="selectionMade">
           <option value="" selected>Select a Base Adapter</option>
-          <option v-for="option in filteredOptions" :key="option.id" :value="option.id">
-            {{ option["name"] }}
+          <option v-for="(name, index) in option.names" :key="index" :value="name">
+            {{ name }}
           </option>
-        </select >
+        </select>
       </div>
       <ul v-if="option.reasons" class="reason">
-        <li  v-for="reason in option.reasons" :key="reason.id">
+        <li v-for="reason in option.reasons" :key="reason.id">
           {{ reason["reason_text"] }}
         </li>
       </ul>
 
       <ul v-if="benefits" class="reason">
-        <li  v-for="benefit in benefits" :key="benefit.index">
+        <li v-for="benefit in benefits" :key="benefit.index">
           {{ benefit }}
         </li>
       </ul>
-      
+
     </div>
-    
-   <p class="learn-more"><a :href="option.url" target="_blank">Learn More</a></p>
+
+    <p class="learn-more"><a :href="option.url" target="_blank">Learn More</a></p>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'Option',
-    props: {
-      option: Object,
-      benefits: Array
-    },
-    data(){
-      return {
-        color: null,
-        size: null,
-        choice: null,
-        selected: null
+export default {
+  name: 'Option',
+  props: {
+    option: Object,
+    benefits: Array
+  },
+  data() {
+    return {
+      color: null,
+      size: null,
+      name: null,
+      selected: null
+    }
+  },
+  methods: {
+    selectionMade() {
+      this.$parent.$emit('selection-made', { "variant_id": this.selectedVariantId, 'product_text': this.option.text, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url });
+      return this.selected;
+    }
+  },
+  computed: {
+    selectedVariantId() {
+      if (!this.option.options) return this.selected;
+      let optionData = this.option.options;
+      if (this.color) {
+        optionData = optionData.filter(option => option.color.toLowerCase() === this.color.toLowerCase())
       }
-    },
-    methods: {
-      selectionMade(){
-          if(this.choice != null) {
-            this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text, "product_option_id": this.choice, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
-          } else {
-            this.$parent.$emit('selection-made', { "product_id": this.selected, 'product_text': this.option.text,  "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
-          } 
-        console.log(this.selected)
-        return this.selected
+      if (this.size) {
+        optionData = optionData.filter(option => option.size === this.size)
       }
-    },
-    computed: {
-      filteredOptions(){
-        let optionData = this.option.options;
-        if(this.color) {
-          optionData = optionData.filter(option => option.color.toLowerCase() === this.color.toLowerCase())
-        }
-        if(this.size) {
-          optionData = optionData.filter(option => option.size === this.size)
-        }
-        return optionData;
+      if (this.name) {
+        optionData = optionData.filter(option => option.name === this.name)
       }
+      return optionData.length === 1 ? optionData[0].variant_id : null;
     }
   }
+}
 </script>
 
 <style lang="scss" scoped>

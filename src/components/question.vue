@@ -4,7 +4,7 @@
       <div class="option_container" v-if="currentQuestion == 2">
         <Option
       v-for="option in question.options.filter(option => option.type === previousQuestion)"
-      :key="option.product_id"
+      :key="option.variant_id"
       :option="option"
       :benefits="question.benefits"
       ></Option>
@@ -13,7 +13,7 @@
        <div class="option_container" v-else>
         <Option
       v-for="option in question.options"
-      :key="option.product_id"
+      :key="option.variant_id"
       :option="option"
       :benefits="question.benefits"
       ></Option>
