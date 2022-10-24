@@ -70,13 +70,14 @@ export default {
   },
   methods: {
     selectionMade() {
+      // console.log('this choice', { "variant_id": this.selectedVariantId, 'product_text': this.option.text, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url })
       this.$parent.$emit('selection-made', { "variant_id": this.selectedVariantId, 'product_text': this.option.text, "image": this.option.image, "outrigger": this.option.type, "url": this.option.url });
       return this.selected;
     }
   },
   computed: {
     selectedVariantId() {
-      if (!this.option.options) return this.selected;
+      if (!this.option.options ) return this.selected;
       let optionData = this.option.options;
       if (this.color) {
         optionData = optionData.filter(option => option.color.toLowerCase() === this.color.toLowerCase())
@@ -87,7 +88,7 @@ export default {
       if (this.name) {
         optionData = optionData.filter(option => option.name === this.name)
       }
-      return optionData.length === 1 ? optionData[0].variant_id : null;
+      return optionData.length === 1 ? optionData[0].variant_id : this.option.variant_id;
     }
   }
 }

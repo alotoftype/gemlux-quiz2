@@ -5,6 +5,7 @@ module.exports = {
   css: {
     loaderOptions: {
       scss: {
+        implementation: require('sass'),
         additionalData:  `
           @import "@/scss/_variables.scss";
         `
